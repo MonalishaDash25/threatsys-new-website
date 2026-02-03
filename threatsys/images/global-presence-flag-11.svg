@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 160 160">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: #ff6820;
+      }
+
+      .cls-4 {
+        fill: #046a38;
+      }
+
+      .cls-5 {
+        fill: #f9c90c;
+      }
+
+      .cls-6 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-7 {
+        fill: #07038d;
+      }
+    </style>
+    <clipPath id="clippath">
+      <circle class="cls-2" cx="80.01" cy="54.27" r="32.66"/>
+    </clipPath>
+  </defs>
+  <path class="cls-5" d="M115.79,54.24c0-19.77-16.02-35.79-35.79-35.79s-35.79,16.02-35.79,35.79c0,18.41,13.9,33.55,31.77,35.55v23.91s-10.71,0-10.71,0c-1.7,0-3.07,1.38-3.07,3.07s1.38,3.07,3.07,3.07h10.71v6.5h-10.71c-1.7,0-3.07,1.38-3.07,3.07s1.38,3.07,3.07,3.07h10.71v4.45c0,2.55,2.07,4.61,4.61,4.61s4.61-2.07,4.61-4.61v-47.34c17.29-2.53,30.59-17.38,30.59-35.37Z"/>
+  <g class="cls-6">
+    <g>
+      <path class="cls-1" d="M30.97,21.63h98.08s0,65.28,0,65.28H30.97s0-65.28,0-65.28Z"/>
+      <path class="cls-3" d="M30.97,21.63h98.08s0,21.76,0,21.76H30.97s0-21.76,0-21.76Z"/>
+      <path class="cls-4" d="M30.97,65.15h98.08s0,21.76,0,21.76H30.97s0-21.76,0-21.76Z"/>
+      <ellipse class="cls-7" cx="80.01" cy="54.27" rx="10.08" ry="10.06"/>
+      <ellipse class="cls-1" cx="80.01" cy="54.27" rx="8.72" ry="8.7"/>
+      <circle class="cls-7" cx="80.01" cy="54.27" r="1.74"/>
+      <g id="d">
+        <g id="c">
+          <g id="b">
+            <g id="a">
+              <path class="cls-7" d="M80.01,45.57l.33,5.24-.33,2.59-.33-2.59.33-5.24Z"/>
+              <circle class="cls-7" cx="81.15" cy="45.64" r=".38"/>
+            </g>
+            <g id="a-2" data-name="a">
+              <path class="cls-7" d="M80.01,62.97l-.33-5.24.33-2.59.33,2.59-.33,5.24Z"/>
+              <circle class="cls-7" cx="78.87" cy="62.9" r=".38"/>
+            </g>
+          </g>
+          <g id="b-2" data-name="b">
+            <g id="a-3" data-name="a">
+              <path class="cls-7" d="M82.27,45.86l-1.04,5.14-.99,2.42.36-2.59,1.67-4.97Z"/>
+              <circle class="cls-7" cx="83.35" cy="46.23" r=".38"/>
+            </g>
+            <g id="a-4" data-name="a">
+              <path class="cls-7" d="M77.76,62.68l1.04-5.14.99-2.42-.36,2.59-1.67,4.97Z"/>
+              <circle class="cls-7" cx="76.68" cy="62.31" r=".38"/>
+            </g>
+          </g>
+        </g>
+        <g id="c-2" data-name="c">
+          <g id="b-3" data-name="b">
+            <g id="a-5" data-name="a">
+              <path class="cls-7" d="M84.37,46.73l-2.34,4.7-1.58,2.08,1.02-2.41,2.91-4.37Z"/>
+              <circle class="cls-7" cx="85.32" cy="47.37" r=".38"/>
+            </g>
+            <g id="a-6" data-name="a">
+              <path class="cls-7" d="M75.65,61.81l2.34-4.7,1.58-2.08-1.02,2.41-2.91,4.37Z"/>
+              <circle class="cls-7" cx="74.7" cy="61.18" r=".38"/>
+            </g>
+          </g>
+          <g id="b-4" data-name="b">
+            <g id="a-7" data-name="a">
+              <path class="cls-7" d="M86.18,48.12l-3.48,3.93-2.07,1.6,1.61-2.06,3.94-3.47Z"/>
+              <circle class="cls-7" cx="86.93" cy="48.97" r=".38"/>
+            </g>
+            <g id="a-8" data-name="a">
+              <path class="cls-7" d="M73.85,60.43l3.48-3.93,2.07-1.6-1.61,2.06-3.94,3.47Z"/>
+              <circle class="cls-7" cx="73.1" cy="59.57" r=".38"/>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g id="d-2" data-name="d">
+        <g id="c-3" data-name="c">
+          <g id="b-5" data-name="b">
+            <g id="a-9" data-name="a">
+              <path class="cls-7" d="M87.56,49.92l-4.38,2.9-2.41,1.01,2.09-1.58,4.71-2.34Z"/>
+              <circle class="cls-7" cx="88.07" cy="50.94" r=".38"/>
+            </g>
+            <g id="a-10" data-name="a">
+              <path class="cls-7" d="M72.46,58.62l4.38-2.9,2.41-1.01-2.09,1.58-4.71,2.34Z"/>
+              <circle class="cls-7" cx="71.96" cy="57.6" r=".38"/>
+            </g>
+          </g>
+          <g id="b-6" data-name="b">
+            <g id="a-11" data-name="a">
+              <path class="cls-7" d="M88.43,52.02l-4.98,1.67-2.59.36,2.42-.99,5.15-1.04Z"/>
+              <circle class="cls-7" cx="88.66" cy="53.13" r=".38"/>
+            </g>
+            <g id="a-12" data-name="a">
+              <path class="cls-7" d="M71.59,56.52l4.98-1.67,2.59-.36-2.42.99-5.15,1.04Z"/>
+              <circle class="cls-7" cx="71.37" cy="55.41" r=".38"/>
+            </g>
+          </g>
+        </g>
+        <g id="c-4" data-name="c">
+          <g id="b-7" data-name="b">
+            <g id="a-13" data-name="a">
+              <path class="cls-7" d="M88.73,54.27l-5.25.33-2.6-.33,2.6-.33,5.25.33Z"/>
+              <circle class="cls-7" cx="88.66" cy="55.41" r=".38"/>
+            </g>
+            <g id="a-14" data-name="a">
+              <path class="cls-7" d="M71.29,54.27l5.25-.33,2.6.33-2.6.33-5.25-.33Z"/>
+              <circle class="cls-7" cx="71.37" cy="53.13" r=".38"/>
+            </g>
+          </g>
+          <g id="b-8" data-name="b">
+            <g id="a-15" data-name="a">
+              <path class="cls-7" d="M88.43,56.52l-5.15-1.04-2.42-.99,2.59.36,4.98,1.67Z"/>
+              <circle class="cls-7" cx="88.07" cy="57.6" r=".38"/>
+            </g>
+            <g id="a-16" data-name="a">
+              <path class="cls-7" d="M71.59,52.02l5.15,1.04,2.42.99-2.59-.36-4.98-1.67Z"/>
+              <circle class="cls-7" cx="71.96" cy="50.94" r=".38"/>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g id="d-3" data-name="d">
+        <g id="c-5" data-name="c">
+          <g id="b-9" data-name="b">
+            <g id="a-17" data-name="a">
+              <path class="cls-7" d="M87.56,58.62l-4.71-2.34-2.09-1.58,2.41,1.01,4.38,2.9Z"/>
+              <circle class="cls-7" cx="86.93" cy="59.57" r=".38"/>
+            </g>
+            <g id="a-18" data-name="a">
+              <path class="cls-7" d="M72.46,49.92l4.71,2.34,2.09,1.58-2.41-1.01-4.38-2.9Z"/>
+              <circle class="cls-7" cx="73.1" cy="48.97" r=".38"/>
+            </g>
+          </g>
+          <g id="b-10" data-name="b">
+            <g id="a-19" data-name="a">
+              <path class="cls-7" d="M86.18,60.43l-3.94-3.47-1.61-2.06,2.07,1.6,3.48,3.93Z"/>
+              <circle class="cls-7" cx="85.32" cy="61.18" r=".38"/>
+            </g>
+            <g id="a-20" data-name="a">
+              <path class="cls-7" d="M73.85,48.12l3.94,3.47,1.61,2.06-2.07-1.6-3.48-3.93Z"/>
+              <circle class="cls-7" cx="74.7" cy="47.37" r=".38"/>
+            </g>
+          </g>
+        </g>
+        <g id="c-6" data-name="c">
+          <g id="b-11" data-name="b">
+            <g id="a-21" data-name="a">
+              <path class="cls-7" d="M84.37,61.81l-2.91-4.37-1.02-2.41,1.58,2.08,2.34,4.7Z"/>
+              <circle class="cls-7" cx="83.35" cy="62.31" r=".38"/>
+            </g>
+            <g id="a-22" data-name="a">
+              <path class="cls-7" d="M75.65,46.73l2.91,4.37,1.02,2.41-1.58-2.08-2.34-4.7Z"/>
+              <circle class="cls-7" cx="76.68" cy="46.23" r=".38"/>
+            </g>
+          </g>
+          <g id="b-12" data-name="b">
+            <g id="a-23" data-name="a">
+              <path class="cls-7" d="M82.27,62.68l-1.67-4.97-.36-2.59.99,2.42,1.04,5.14Z"/>
+              <circle class="cls-7" cx="81.15" cy="62.9" r=".38"/>
+            </g>
+            <g id="a-24" data-name="a">
+              <path class="cls-7" d="M77.76,45.86l1.67,4.97.36,2.59-.99-2.42-1.04-5.14Z"/>
+              <circle class="cls-7" cx="78.87" cy="45.64" r=".38"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 160 160">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <polygon class="cls-1" points="127.63 107.5 127.63 52.5 80 25 32.37 52.5 32.37 107.5 80 135 127.63 107.5"/>
+    </clipPath>
+  </defs>
+  <g class="cls-2">
+    <image width="500" height="500" transform="translate(-6.25 -10.51) scale(.38)" xlink:href="../../../Website Logo/AWS SECURITY SPECIALITY.png"/>
+  </g>
+</svg>

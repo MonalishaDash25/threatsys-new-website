@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Penetration Testing</title>
+
+    <!-----Font----->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="../images/TT-logo.png">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/font.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/animate.min.css" />
+
+    <!-- Core Style -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+</head>
+
+
+<body>
+
+
+    <header class="header">
+    <div class="top-header">
+        <div class="container-fluid">
+            <div class="top-content">
+                <div class="top-header-content">
+                    <a class="topbar-text">
+                        <img src="../images/phone.png" alt="">
+                        Under Attack? <span>09668200222</span>
+                    </a>
+
+                    <!-- <a class="time-offc">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                    </svg>
+                    <span> Mon - Sat 9:30 am – 8:30 pm</span>
+                        
+                </a> -->
+
+                </div>
+                <div class="header-info">
+
+                    <div class="info-item">
+                        Follow Us on:
+                        <div class="social-menu">
+                            <ul>
+                                <li><a href="https://x.com/threatsys" target="_blank"><img
+                                            src="../images/twitter.png" alt=""></a></li>
+                                <li><a href="https://www.instagram.com/threatsys/" target="_blank"><img
+                                            src="../images/instagram.png" alt=""></a></li>
+                                <li><a href="https://www.facebook.com/threatsys" target="_blank"><img
+                                            src="../images/facebook-app-symbol.png" alt=""></a></li>
+                                <li><a href="https://www.youtube.com/@ThreatsysTechnologies" target="_blank"><img
+                                            src="../images/youtube.png" alt=""></a></li>
+                                <li><a href="https://www.linkedin.com/company/threatsys/" target="_blank"><img
+                                            src="../images/linkedin.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="theme-switcher">
+                        <button class="theme-btn" id="themeToggle">
+                            <span id="themeIcon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                    class="bi bi-sun-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+                                </svg>
+                            </span>
+                        </button>
+
+                        <div class="theme-dropdown" id="themeDropdown">
+                            <div class="theme-option" data-theme="light">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                    class="bi bi-sun-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+                                </svg> Light
+                            </div>
+                            <div class="theme-option" data-theme="dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                    class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278" />
+                                    <path
+                                        d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z" />
+                                </svg> Dark
+                            </div>
+                            <div class="theme-option" data-theme="auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                    class="bi bi-circle-half" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16" />
+                                </svg> Auto
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-bottom">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 col-sm-2">
+                    <div class="header-logo">
+                        <!-- <img src="./images/header-shape.png" class="header-shape" alt=""> -->
+                        <a href="index.html" class="inr-logo">
+                            <img src="../images/TT-logo-dark-ai-1.svg" alt="">
+                            <!-- <img src="./images/TT-logo-dark-s.svg" alt=""> -->
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-10 col-sm-10">
+                    <div class="right-header">
+                        <div class="header-menu">
+                            <ul class="header-ul">
+                                <li class="menu-item has-menu" data-menu="company-dd">
+                                    <a>Company</a>
+                                    <div class="dropdown-container simple-dropdown" id="company-dd">
+
+                                        <ul>
+                                            <li><a href="./about.html">About</a></li>
+                                            <li><a href="./core-values.html">Core Values</a></li>
+                                            <li><a href="./Teams.html">Leadership Team</a></li>
+                                            <li><a href="./careers.html">We are Hiring</a></li>
+                                            <li><a href="./why-choose-us.html">Why Choose Us</a></li>
+                                            <li><a href="./locations.html">Our Locations</a></li>
+                                            <li><a href="./news-coverage.html">News Coverage</a></li>
+                                            <li><a href="./faq.html">FAQ</a></li>
+
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li class="menu-item services-item has-menu" data-menu="services-menu">
+                                    <a>Services</a>
+
+                                    <!-- <div class="dropdown-container mega-menu" id="services-menu">
+                            <div class="mega-left">
+                                <ul>
+                                    <li class="tab-btn active" data-tab="app-sec">
+                                        <a href="./services-cyber-security-testing.html">
+                                        <img src="./images/security-.png" alt="Image">
+                                        Cyber Security Testing
+                                        </a>
+                                    </li>
+                                    <li class="tab-btn" data-tab="net-sec">
+                                        <a href="./services-cyber-security-testing.html">
+                                            <img src="./images/consulting.png" alt="Image">
+                                            Security Consulting & Compliance
+                                        </a>
+                                    </li>
+                                    <li class="tab-btn" data-tab="cloud-sec">
+                                            <a href="./services-cyber-security-testing.html">
+                                        <img src="./images/forensic.png" alt="Image">
+                                        Innovative Cyber Security Services
+                                        </a>
+                                    </li>
+                                    <li class="tab-btn" data-tab="bas">
+                                            <a href="./services-cyber-security-testing.html">
+                                        <img src="./images/integrity.png" alt="Image">
+                                        Cyber Security Audit and Review Services
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+
+                            <div class="mega-right">
+                                <ul class="tab-content active" id="app-sec">
+                                    <li><a href="./cyber-security-testing/web-application-security-testing.html">Web Application Security Testing Services</a></li>
+                                    <li><a href="./cyber-security-testing/network-penetration-testing.html">Network Penetration Testing</a></li>
+                                    <li>Web Services & API Assessment</li>
+                                    <li>Mobile Apps Security Testing</li>
+                                    <li>Thick Client Application Security Testing</li>
+                                    <li>IOT Security Testing</li>
+                                    <li>SCADA Security Testing</li>
+                                    <li>Enterprise Security Testing</li>
+                                    <li>Infrastructure Security Testing</li>
+                                    <li>Secure Source Code Review</li>
+
+                                </ul>
+
+                                
+                                <ul class="tab-content" id="net-sec">
+                                    <li>External Network Pentesting</li>
+                                    <li>Internal Network Assessment</li>
+                                    <li>Firewall Review</li>
+                                    <li>Router/Switch Security Audit</li>
+                                </ul>
+
+                                
+                                <ul class="tab-content" id="cloud-sec">
+                                    <li>AWS Security Assessment</li>
+                                    <li>Azure Cloud Audit</li>
+                                    <li>GCP Security Review</li>
+                                </ul>
+
+                                
+                                <ul class="tab-content" id="bas">
+                                    <li>Adversary Simulation</li>
+                                    <li>Red Teaming</li>
+                                    <li>MITRE ATT&CK Mapping</li>
+                                </ul>
+
+                                
+                            </div>
+                        </div> -->
+                                    <div class="dropdown-container mega-menu" id="services-menu">
+
+                                        <ul class="accordion-menu">
+
+                                            <!-- ITEM 1 -->
+                                            <li class="acc-item">
+                                                <button class="acc-btn">
+                                                    <img src="../images/security-.png" alt="">
+                                                    Cyber Security Testing
+                                                    <span class="arrow-icon">▾</span>
+                                                </button>
+
+                                                <ul class="acc-content">
+                                                    <li><a
+                                                            href="./cyber-security-testing/web-application-security-testing.html">Web
+                                                            Application Security Testing Services</a></li>
+                                                    <li><a
+                                                            href="./cyber-security-testing/network-penetration-testing.html">Network
+                                                            Penetration Testing</a></li>
+                                                    <li><a href="">Web Services & API Assessment</a></li>
+                                                    <li><a href="">Mobile Apps Security Testing</a></li>
+                                                    <li><a href="">Thick Client App Testing</a></li>
+                                                    <li><a href="">IOT Security Testing</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <!-- ITEM 2 -->
+                                            <li class="acc-item">
+                                                <button class="acc-btn">
+                                                    <img src="../images/consulting.png" alt="">
+                                                    Security Consulting & Compliance
+                                                    <span class="arrow-icon">▾</span>
+                                                </button>
+
+                                                <ul class="acc-content">
+                                                    <li><a href="">External Network Pentesting</a></li>
+                                                    <li><a href="">Internal Network Assessment</a></li>
+                                                    <li><a href="">Firewall Review</a></li>
+                                                    <li><a href="">Router/Switch Security Audit</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <!-- ITEM 3 -->
+                                            <li class="acc-item">
+                                                <button class="acc-btn">
+                                                    <img src="../images/forensic.png" alt="">
+                                                    Innovative Cyber Security Services
+                                                    <span class="arrow-icon">▾</span>
+                                                </button>
+
+                                                <ul class="acc-content">
+                                                    <li><a href="">AWS Security Assessment</a></li>
+                                                    <li><a href="">Azure Cloud Audit</a></li>
+                                                    <li><a href="">GCP Security Review</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <!-- ITEM 4 -->
+                                            <li class="acc-item">
+                                                <button class="acc-btn">
+                                                    <img src="../images/integrity.png" alt="">
+                                                    Cyber Security Audit & Review Services
+                                                    <span class="arrow-icon">▾</span>
+                                                </button>
+
+                                                <ul class="acc-content">
+                                                    <li><a href="">Adversary Simulation</a></li>
+                                                    <li><a href="">Red Teaming</a></li>
+                                                    <li><a href="">MITRE ATT&CK Mapping</a></li>
+                                                </ul>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                </li>
+
+                                <li class="menu-item has-menu products" data-menu="products-dd">
+                                    <a>Products</a>
+                                    <div class="dropdown-container simple-dropdown no-hover" id="products-dd">
+
+                                        <ul>
+                                            <li><a class="prdct-a" target="_blank" href="https://www.cyqer.in/"><img
+                                                        class="product-logo"
+                                                        src="../images/product-logo/cyqer-logo.png" alt=""></a></li>
+                                            <li><a class="prdct-a" target="_blank" href="https://grc360.in/"><img
+                                                        class="product-logo width-img-prdt"
+                                                        src="../images/product-logo/GRC-logo-light.png" alt=""></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu-item has-menu" data-menu="industries-dd"><a>Industries</a>
+                                    <div class="dropdown-container simple-dropdown" id="products-dd">
+
+                                        <ul>
+                                            <li><a href="./government-industry.html">Government Industry</a></li>
+                                            <li><a href="#">Banking & Finance</a></li>
+                                            <li><a href="#">IT, ITes & Retail Industry</a></li>
+                                            <li><a href="#">Manufacturing & Telecom</a></li>
+                                            <li><a href="#">Healthcare</a></li>
+                                            <li><a href="#">Higher Education</a></li>
+
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu-item has-menu" data-menu="resources-dd"><a>Resources</a>
+                                    <div class="dropdown-container simple-dropdown" id="products-dd">
+
+                                        <ul>
+                                            <li><a href="./blog.html">Blog</a></li>
+                                            <li><a href="./case-studies.html">Case Studies</a></li>
+                                            <li><a href="./white-paper.html">White Paper</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu-item" data-menu="contact-dd"><a href="./contact.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <!-- SEARCH -->
+
+                        <div class="header-btn-outer">
+
+                            <button class="search">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#000"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+
+                                </svg>
+
+                            </button>
+
+                            <a href="#" class="cta-btn fill-icon mt-0">
+                                <span>Schedule a Meeting</span>
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
+                                        stroke="#000" stroke-width="2" viewBox="0 0 24 24">
+                                        <path d="M5 12h14M12 5l7 7-7 7" />
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <div class="menu-icon cursor-pointer">
+                                <span class="icon-ham">
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    </header>
+
+
+    <!-- ============Hamburger=========== -->
+    <div class="hamenu">
+        <div class="logo-close">
+            <div>
+                <img src="../images/TT-logo-light.svg" alt="Threatsys" class="logo">
+            </div>
+            <div class="modal-form">
+                <span class="ham-close-btn"></span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="cont-info full-width for-res">
+                <div class="search-form">
+                    <div class="form-group __web-inspector-hide-shortcut__">
+                        <input type="text" name="search" placeholder="Search">
+                        <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                            </svg></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-links">
+                <ul class="main-menu rest">
+                    <li>
+                        <div class="o-hidden">
+                            <a href="index.html" class="link"><span class="fill-text" data-text="Home">Home</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="o-hidden">
+                            <div class="link cursor-pointer dmenu"><span class="fill-text"
+                                    data-text="Company">Company</span> <i></i></div>
+                        </div>
+                        <div class="ham-sub-menu">
+                            <ul>
+                                <li><a href="./about.html" class="sub-link">About</a></li>
+                                <li><a href="./core-values.html" class="sub-link">Core Values</a></li>
+                                <li><a href="./Teams.html" class="sub-link">Leadership Team</a></li>
+                                <li><a href="./careers.html" class="sub-link">We are Hiring</a></li>
+                                <li><a href="./why-choose-us.html" class="sub-link">Why Choose Us</a></li>
+                                <li><a href="./locations.html" class="sub-link">Our Locations</a></li>
+                                <li><a href="./news-coverage.html" class="sub-link">News Coverage</a></li>
+                                <li><a href="./faq.html" class="sub-link">FAQ</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="o-hidden">
+                            <div class="link cursor-pointer dmenu"><span class="fill-text"
+                                    data-text="Services">Services</span> <i></i>
+                            </div>
+                        </div>
+                        <div class="ham-sub-menu">
+                            <ul>
+                                <li><a href="corporate-training.html" class="sub-link">Cyber Security Testing</a>
+                                </li>
+                                <li><a href="hire-a-trainer.html" class="sub-link">Security Consulting & Compliance</a>
+                                </li>
+                                <li><a href="1-on-1-training.html" class="sub-link"> Innovative Cyber Security
+                                        Services</a></li>
+                                <li><a href="career-mentorship-program.html" class="sub-link"> Cyber Security Audit &
+                                        Review Service</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="o-hidden">
+                            <div class="link cursor-pointer dmenu"><span class="fill-text"
+                                    data-text="Products">Products</span> <i></i>
+                            </div>
+                        </div>
+                        <div class="ham-sub-menu">
+                            <ul>
+                                <li><a href="https://www.cyqer.in/" target="_blank" class="sub-link">Cyqer</a>
+                                </li>
+                                <li><a href="https://grc360.in/" target="_blank" class="sub-link">GRC360</a></li>
+
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="o-hidden">
+                            <div class="link cursor-pointer dmenu"><span class="fill-text"
+                                    data-text="Industries">Industries</span> <i></i>
+                            </div>
+                        </div>
+                        <div class="ham-sub-menu">
+                            <ul>
+                                <li><a href="https://www.cyqer.in/" target="_blank" class="sub-link">Government
+                                        Industry</a>
+                                </li>
+                                <li><a href="https://grc360.in/" target="_blank" class="sub-link">Banking & Finance</a>
+                                </li>
+                                <li><a href="https://grc360.in/" target="_blank" class="sub-link">IT, ITes & Retail
+                                        Industry</a></li>
+                                <li><a href="https://grc360.in/" target="_blank" class="sub-link">Manufacturing &
+                                        Telecom</a></li>
+                                <li><a href="https://grc360.in/" target="_blank" class="sub-link">Healthcare</a></li>
+                                <li><a href="https://grc360.in/" target="_blank" class="sub-link">Higher Education</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                   <li>
+                        <div class="o-hidden">
+                            <div class="link cursor-pointer dmenu"><span class="fill-text"
+                                    data-text="Resources">Resources</span> <i></i>
+                            </div>
+                        </div>
+                        <div class="ham-sub-menu">
+                            <ul>
+                                <li><a href="https://www.cyqer.in/" target="_blank" class="sub-link">Blog</a>
+                                </li>
+                                <li><a href="https://grc360.in/" target="_blank" class="sub-link">Case Studies</a>
+                                </li>
+                                <li><a href="https://grc360.in/" target="_blank" class="sub-link">White Paper</a></li>
+                                
+                            </ul>
+                        </div>
+                    </li>
+                    
+
+                    <li>
+                        <div class="o-hidden">
+                            <a href="./contact.html" class="link"><span class="fill-text"
+                                    data-text="Contact Us">Contact Us</span></a>
+                        </div>
+
+                    </li>
+                  
+                </ul>
+            </div>
+
+            <!-- <div class="col-lg-3 col-md-3 d-flex align-items-end">
+                    <div class="cont-info full-width">
+                        <div class="contact-item">
+                            <h5 class="mb-15">Get In Touch</h5>
+                            <p>3rd Floor, F3, Ryan Tower, Technology Corridor,
+                                near Trident Academy, Chandaka Industrial Estate,
+                                Infocity, Chandrasekharpur, Bhubaneswar, Odisha 751024</p>
+                            <p class="underline main-color mt-3 mb-1"><a style="color: #f7c70c;"
+                                    href="#0">91-9668200222</a></p>
+                            <p><a style="color: #f7c70c;" href="#0">support@threatsys.co.in</a></p>
+                        </div>
+                        <div class="search-form">
+                            <div class="form-group __web-inspector-hide-shortcut__">
+                                <input type="text" name="search" placeholder="Search">
+                                <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                                        class="bi bi-search" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                    </svg></button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div> -->
+
+        </div>
+    </div>
+
+    <!-- ============header-search=========== -->
+    <div class="search__popup">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="search__wrapper">
+                        <div class="search__close">
+                            <button type="button" class="search-close-btn">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17 1L1 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path d="M1 1L17 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="search__form">
+                            <form action="#">
+                                <div class="search__input">
+                                    <input class="search-input-field" type="text" placeholder="Type keywords here">
+                                    <span class="search-focus-border"></span>
+                                    <button type="submit">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#000"
+                                            class="bi bi-search" viewBox="0 0 16 16">
+
+                                            <path
+                                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0">
+                                            </path>
+
+                                        </svg>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="search-popup-overlay"></div>
+    <!-- header-search-end -->
+
+
+
+    <section class="page-banner">
+        <img src="../images/testing-banner.jpg" alt="banner">
+        <div class="banner-container">
+            <div class="container">
+                <div class="row h-100">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="banner-text">
+                            <h1 class="sub-page-mr banner-title">Network Penetration Testing</h1>
+
+                            <ul class="breadcrum">
+                                <li>Home</li>
+                                <li>Services</li>
+                                <li>Cyber Security Testing</li>
+                                <li class="active-brd">Network Penetration Testing</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+     <section class="section services-details-section">
+           <div class="container">
+              <h3 class="wow fadeInUp top-text text-align-center">Services</h3>
+               <h2 class="wow fadeInUp text-align-center" data-wow-delay="0.2s" data-cursor="-opaque">
+                       Importance of Penetration
+                  <span class="gradient-text">  Testing in Cyber Defense</span>
+
+               </h2>
+               <div class="row align-items-center">
+                    <div class="col-xl-7 col-md-12">
+                        <div class="details-cntr-text  wow fadeInLeft">
+                            <p class="page-sub-text">Mitigate network security risks, identify weak points, and stay compliant with ease.</p>
+
+                            <p>At Threatsys, we uncover gaps in your network security <strong>before attackers do</strong>. As a trusted <strong>Network Penetration Testing Company in Bhubaneswar</strong>, India, we perform both internal and external tests to assess real-world threats.Our testing simulates cyberattacks to reveal vulnerabilities affecting data <strong>Confidentiality, Integrity, and Availability (CIA)</strong>. Starting with a vulnerability assessment, our experts combine advanced tools with manual techniques to detect and exploit security flaws.After testing, you receive a <strong>detailed report</strong> explaining how vulnerabilities were found and how to fix them, ensuring stronger, safer network defenses.</p>
+
+                            <p>Our network penetration tests begin with a vulnerability assessment, where our expert penetration testers utilize multiple tools to gain initial knowledge. A vulnerability assessment is not a replacement for a network penetration test, though. After interpreting those results, our expert penetration testers will use manual techniques, human intuition, and their backgrounds in network administration to attack those vulnerabilities.</p>
+
+                        </div> 
+                    </div>
+
+
+                    <div class="col-xl-5 col-md-12">
+                    <div class="service-vector wow fadeInRight">
+                        <img src="../images/Asset 95.svg" alt="">
+                    </div>
+                    </div>
+
+                </div>
+           </div>
+     </section>
+
+
+    <section class="section data-section fnt">
+        <div class="container">
+            <div class="why-choose-counter-list">
+
+                <div class="why-choose-counter-item wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="icon-box">
+                        <img src="../images/icon-why-choose-counter-1.svg" alt="">
+                    </div>
+                    <div class="why-choose-counter-content">
+                        <h3><span class="counter">15</span>+</h3>
+                        <p>Years experience</p>
+                    </div>
+                </div>
+
+                <div class="why-choose-counter-item wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="icon-box">
+                        <img src="../images/icon-why-choose-counter-2.svg" alt="">
+                    </div>
+                    <div class="why-choose-counter-content">
+                        <h3><span class="counter">60</span>+</h3>
+                        <p>Certified Pentesters</p>
+                    </div>
+                </div>
+
+                <div class="why-choose-counter-item wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="icon-box">
+                        <img src="../images/icon-why-choose-counter-3.svg" alt="">
+                    </div>
+                    <div class="why-choose-counter-content">
+                        <h3><span class="counter">100</span>%</h3>
+                        <p>Clients satisfaction</p>
+                    </div>
+                </div>
+
+                <div class="why-choose-counter-item wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="icon-box">
+                        <img src="../images/icon-why-choose-counter-4.svg" alt="">
+                    </div>
+                    <div class="why-choose-counter-content">
+                        <h3><span class="counter">365</span></h3>
+                        <p>Days service desk</p>
+                    </div>
+                </div>
+
+                <div class="why-choose-counter-item wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="icon-box">
+                        <img src="../images/revenue.png" alt="">
+                    </div>
+                    <div class="why-choose-counter-content">
+                        <h3><span class="counter">17</span>+</h3>
+                        <p>Countries global reach</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+                
+    <section class="section services-details-section">
+        <img class="services_right" src="../images/services_right_shape.png" alt="bg">
+        <img class="services_left" src="../images/services_left_shape.png" alt="bg">
+        <div class="container">
+
+        <h3 class="wow fadeInUp top-text text-align-center">Services</h3>
+        <h2 class="wow fadeInUp text-align-center" data-wow-delay="0.2s" data-cursor="-opaque">
+                   Best Website Security 
+           <br> <span class="gradient-text">Testing Services in Bhubaneswar, Odisha</span></h2>
+
+            <div class="step-wrapper row">
+
+                <!-- ROW 1 -->
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                    <div class="step-card">
+                        <div class="ribbon-number">01</div>
+                        <div class="stat-img"><img src="../images/icon/scoping.png" alt=""></div>
+                        <h3 class="title">Scoping</h3>
+                        <p class="desc">
+                            The first step in web application penetration testing is defining the scope of assessment.
+                            This stage secures sensitive data by identifying and limiting access to authorized documents, assets, and information. Scoping helps map out critical areas for detailed testing in later stages.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                    <div class="step-card">
+                        <div class="ribbon-number">02</div>
+                        <div class="stat-img"><img src="../images/icon/mapping.png" alt=""></div>
+                        <h3 class="title">Mapping & Identification</h3>
+                        <p class="desc">
+                            This phase involves mapping the IT infrastructure within the organization.
+                            It helps our testers understand how different systems interact, identify weaknesses, and locate potential points of compromise within the application ecosystem.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                    <div class="step-card">
+                        <div class="ribbon-number">03</div>
+                        <div class="stat-img"><img src="../images/icon/reconnaissance.png" alt=""></div>
+                        <h3 class="title">Reconnaissance & Enumeration</h3>
+                        <p class="desc">
+                            In this step, our security experts discreetly gather intelligence about the target system including domain details, IP addresses, open ports, technologies in use, and configuration data.
+                            This intelligence forms the foundation for identifying entry points and assessing potential vulnerabilities.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ROW 2 -->
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                    <div class="step-card">
+                        <div class="ribbon-number">04</div>
+                        <div class="stat-img"><img src="../images/icon/vulnerability-identification.png" alt=""></div>
+                        <h3 class="title">Vulnerability Identification</h3>
+                        <p class="desc">
+                            Once sufficient data is collected, we perform comprehensive vulnerability detection using both automated tools and manual testing.
+                            Our goal is to identify flaws such as misconfigurations, injection points, weak authentication, insecure APIs, and outdated components.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                    <div class="step-card">
+                        <div class="ribbon-number">05</div>
+                        <div class="stat-img"><img src="../images/icon/scanning.png" alt=""></div>
+                        <h3 class="title">Scanning</h3>
+                        <p class="desc">
+                            We conduct internal and external scans to detect open ports, insecure services, database vulnerabilities, API flaws, and CMS exploitations.
+                            This phase provides a complete security snapshot of your web application environment.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                    <div class="step-card">
+                        <div class="ribbon-number">06</div>
+                        <div class="stat-img"><img src="../images/icon/Post-exploitation.png" alt=""></div>
+                        <h3 class="title">Post Exploitation</h3>
+                        <p class="desc">
+                            This stage simulates real-world attacks to evaluate the impact of exploited vulnerabilities.
+                            Our experts assess how far an attacker could penetrate the system and the potential damage that could occur if these weaknesses are left unaddressed.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ROW 3 -->
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                    <div class="step-card">
+                        <div class="ribbon-number">07</div>
+                        <div class="stat-img"><img src="../images/icon/report.png" alt=""></div>
+                        <h3 class="title">Reporting</h3>
+                        <p class="desc">
+                            After detailed analysis, we deliver a comprehensive security report highlighting all discovered vulnerabilities, their severity levels, and potential business impacts.
+                            Each report includes detailed remediation guidance to help your developers fix issues effectively.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                    <div class="step-card">
+                        <div class="ribbon-number">08</div>
+                        <div class="stat-img"><img src="../images/icon/strategic-mitigation.png" alt=""></div>
+                        <h3 class="title">Strategic Mitigation</h3>
+                        <p class="desc">
+                            Strategic mitigation involves implementing preventive measures and security policies to reduce the likelihood and impact of future cyberattacks.
+                            We help organizations build long-term resilience by addressing root causes and strengthening their security posture.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                    <div class="step-card">
+                        <div class="ribbon-number">09</div>
+                        <div class="stat-img"><img src="../images/icon/patch-verification.png" alt=""></div>
+                        <h3 class="title">Patch Verification</h3>
+                        <p class="desc">
+                            Once patches are applied, our team performs patch verification testing to confirm that fixes are implemented correctly and no new vulnerabilities are introduced.
+                            A validation report is also provided to ensure transparency and compliance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="section services-details-wapt">
+        <div class="container">
+
+        <div class="row">
+            <div class="col-xl-5 col-md-12">
+                <h3 class="wow fadeInUp top-text">Web Application Security Benefits</h3>
+            <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque">
+                Our WAPT services bring you a unique set
+         <span class="gradient-text"> of security advantages</span></h2>
+
+            <div class=" w-100">
+                <a href="#" class="cta-btn fill-icon mt-0">
+                    <span>Get Secured Now</span>
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
+                            stroke="#000" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                </a>
+              </div>
+
+
+              <img src="../images/TT.svg" alt="Logo" class="line-logo-img">
+            </div>
+
+            <div class="col-xl-7 col-md-12">
+                <div class="benefits-row">
+
+                    <div class="benefit-item wow fadeInRight">
+                
+                        <h3>Deep Insights</h3>
+                        <p>Identifying every detail that could be abused or become an attack surface. Insights help uncover hidden and critical vulnerabilities.</p>
+                    </div>
+
+                    <div class="benefit-item wow fadeInRight">
+
+                        <h3>Identifying & Fixing Vulnerabilities</h3>
+                        <p>Finding vulnerabilities, prioritizing high-risk issues, and providing a strategic plan to fix them through reliable assessment.</p>
+                    </div>
+
+                    <div class="benefit-item wow fadeInRight">
+            
+                        <h3>Black Box & White Box Pentesting</h3>
+                        <p>Detailed analysis of application design, networking, system settings, data sources, authorization, and authentication flows.</p>
+                    </div>
+
+                    <div class="benefit-item wow fadeInRight">
+                    
+                        <h3>Manual & Automated Application Testing</h3>
+                        <p>Our experts detect hidden flaws that automation alone cannot reveal, combining both manual and automated testing approaches.</p>
+                    </div>
+
+                    <div class="benefit-item wow fadeInRight">
+                    
+                        <h3>CERT-IN Security Audit</h3>
+                        <p>As a CERT-In–associated auditor, we conduct certified security assessments for applications, networks, and websites.</p>
+                    </div>
+
+                </div>
+
+              
+              
+              
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+
+
+
+    <section class="section full-testimonial">
+         <img src="../images/bg-blue.jpg" alt="Background" class="testimonial-bg" />
+    <div class="container">
+        <img src="../images/quotes.png" alt="Logo" class="line-logo-img">
+
+    <!-- Swiper -->
+    <div class="swiper msgswiper">
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+        <div class="service-text-testimonial">
+            <h4>Threatsys's team went deep down into the rabbit hole to understand the product and find several bugs with a business logic rule that took engineering several weeks to analyze within the code. Threatsys is the No.1 Website Security Testing Services Provider in Bhubaneswar, Odisha</h4>
+            <p>Security Officer, Leading Healthcare Company</p>
+        </div>
+        </div>
+
+        <div class="swiper-slide">
+        <div class="service-text-testimonial">
+            <h4>Threatsys's team went deep down into the rabbit hole to understand the product and find several bugs with a business logic rule that took engineering several weeks to analyze within the code. Threatsys is the No.1 Website Security Testing Services Provider in Bhubaneswar, Odisha</h4>
+            <p>Security Officer, Leading Healthcare Company</p>
+        </div>
+        </div>
+
+    </div>
+
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+    </div>
+
+
+    </div>
+    </section>
+
+
+
+
+
+
+    <a href="https://wa.me/919876543210" target="_blank" rel="noopener" class="btn-whatsapp-pulse">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+
+    <div class="btn-spotlight">
+        <a>
+            <div class="speaker-div">
+                <img src="../images/spotlight-icon.svg" alt="spotlight">
+            </div>
+        </a>
+    </div>
+
+    <div class="spotlight" id="spotlight">
+        <div class="close-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-circle"
+                viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+            </svg>
+        </div>
+        <div>
+            <img src="../images/spotlight1.png" alt="spotlight">
+        </div>
+        <div>
+            <p>Check out our latest article on Cybersecurity Trends!</p>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

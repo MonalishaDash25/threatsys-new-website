@@ -1,0 +1,3040 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threatsys</title>
+
+    <!-----Font----->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link rel="icon" type="image/png" href="./images/TT-logo.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./css/animate.min.css" />
+
+    <!-- Core Style -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+</head>
+
+<body>
+
+    <!-- <img class="header-demo" src="./images/header.jpg" alt="Image"> -->
+
+    <header class="header">
+        <div class="top-header">
+            <div class="container-fluid">
+                <div class="top-content">
+                    <div class="top-header-content">
+                        <a class="topbar-text">
+                            <img src="./images/phone.png" alt="">
+                            Under Attack? <span>09668200222</span>
+                        </a>
+
+                        <!-- <a class="time-offc">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                        </svg>
+                        <span> Mon - Sat 9:30 am – 8:30 pm</span>
+                          
+                    </a> -->
+
+                    </div>
+                    <div class="header-info">
+
+                        <div class="info-item">
+                            Follow Us on:
+                            <div class="social-menu">
+                                <ul>
+                                    <li><a href="https://x.com/threatsys" target="_blank"><img
+                                                src="./images/twitter.png" alt=""></a></li>
+                                    <li><a href="https://www.instagram.com/threatsys/" target="_blank"><img
+                                                src="./images/instagram.png" alt=""></a></li>
+                                    <li><a href="https://www.facebook.com/threatsys" target="_blank"><img
+                                                src="./images/facebook-app-symbol.png" alt=""></a></li>
+                                    <li><a href="https://www.youtube.com/@ThreatsysTechnologies" target="_blank"><img
+                                                src="./images/youtube.png" alt=""></a></li>
+                                    <li><a href="https://www.linkedin.com/company/threatsys/" target="_blank"><img
+                                                src="./images/linkedin.png" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="theme-switcher">
+                            <button class="theme-btn" id="themeToggle">
+                                <span id="themeIcon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                        class="bi bi-sun-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+                                    </svg>
+                                </span>
+                            </button>
+
+                            <div class="theme-dropdown" id="themeDropdown">
+                                <div class="theme-option" data-theme="light">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                        class="bi bi-sun-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+                                    </svg> Light
+                                </div>
+                                <div class="theme-option" data-theme="dark">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                        class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278" />
+                                        <path
+                                            d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z" />
+                                    </svg> Dark
+                                </div>
+                                <div class="theme-option" data-theme="auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                        class="bi bi-circle-half" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16" />
+                                    </svg> Auto
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2 col-sm-2">
+                        <div class="header-logo">
+                            <!-- <img src="./images/header-shape.png" class="header-shape" alt=""> -->
+                            <a href="./index.html" class="inr-logo">
+                                <img src="./images/TT-logo-dark-ai-1.svg" alt="">
+                                <!-- <img src="./images/TT-logo-dark-s.svg" alt=""> -->
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-10 col-sm-10">
+                        <div class="right-header">
+                            <div class="header-menu">
+                                <ul class="header-ul">
+                                    <li class="menu-item has-menu" data-menu="company-dd">
+                                        <a>Company</a>
+                                        <div class="dropdown-container simple-dropdown" id="company-dd">
+
+                                            <ul>
+                                                <li><a href="./about.html">About</a></li>
+                                                <li><a href="./core-values.html">Core Values</a></li>
+                                                <li><a href="./Teams.html">Leadership Team</a></li>
+                                                <li><a href="./careers.html">We are Hiring</a></li>
+                                                <li><a href="./why-choose-us.html">Why Choose Us</a></li>
+                                                <li><a href="./locations.html">Our Locations</a></li>
+                                                <li><a href="./news-coverage.html">News Coverage</a></li>
+                                                <li><a href="./faq.html">FAQ</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li class="menu-item services-item has-menu" data-menu="services-menu">
+                                        <a>Services</a>
+
+                                        <!-- <div class="dropdown-container mega-menu" id="services-menu">
+                                <div class="mega-left">
+                                    <ul>
+                                        <li class="tab-btn active" data-tab="app-sec">
+                                            <a href="./services-cyber-security-testing.html">
+                                           <img src="./images/security-.png" alt="Image">
+                                            Cyber Security Testing
+                                           </a>
+                                        </li>
+                                        <li class="tab-btn" data-tab="net-sec">
+                                            <a href="./services-cyber-security-testing.html">
+                                             <img src="./images/consulting.png" alt="Image">
+                                              Security Consulting & Compliance
+                                            </a>
+                                        </li>
+                                        <li class="tab-btn" data-tab="cloud-sec">
+                                             <a href="./services-cyber-security-testing.html">
+                                           <img src="./images/forensic.png" alt="Image">
+                                            Innovative Cyber Security Services
+                                            </a>
+                                        </li>
+                                        <li class="tab-btn" data-tab="bas">
+                                             <a href="./services-cyber-security-testing.html">
+                                            <img src="./images/integrity.png" alt="Image">
+                                            Cyber Security Audit and Review Services
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="mega-right">
+                                    <ul class="tab-content active" id="app-sec">
+                                        <li><a href="./cyber-security-testing/web-application-security-testing.html">Web Application Security Testing Services</a></li>
+                                        <li><a href="./cyber-security-testing/network-penetration-testing.html">Network Penetration Testing</a></li>
+                                        <li>Web Services & API Assessment</li>
+                                        <li>Mobile Apps Security Testing</li>
+                                        <li>Thick Client Application Security Testing</li>
+                                        <li>IOT Security Testing</li>
+                                        <li>SCADA Security Testing</li>
+                                        <li>Enterprise Security Testing</li>
+                                        <li>Infrastructure Security Testing</li>
+                                        <li>Secure Source Code Review</li>
+
+                                    </ul>
+
+                                   
+                                    <ul class="tab-content" id="net-sec">
+                                        <li>External Network Pentesting</li>
+                                        <li>Internal Network Assessment</li>
+                                        <li>Firewall Review</li>
+                                        <li>Router/Switch Security Audit</li>
+                                    </ul>
+
+                                  
+                                    <ul class="tab-content" id="cloud-sec">
+                                        <li>AWS Security Assessment</li>
+                                        <li>Azure Cloud Audit</li>
+                                        <li>GCP Security Review</li>
+                                    </ul>
+
+                                  
+                                    <ul class="tab-content" id="bas">
+                                        <li>Adversary Simulation</li>
+                                        <li>Red Teaming</li>
+                                        <li>MITRE ATT&CK Mapping</li>
+                                    </ul>
+
+                                  
+                                </div>
+                            </div> -->
+                                        <div class="dropdown-container mega-menu" id="services-menu">
+
+                                            <ul class="accordion-menu">
+
+                                                <!-- ITEM 1 -->
+                                                <li class="acc-item">
+                                                    <button class="acc-btn">
+                                                        <img src="./images/security-.png" alt="">
+                                                        Cyber Security Testing
+                                                        <span class="arrow-icon">▾</span>
+                                                    </button>
+
+                                                    <ul class="acc-content">
+                                                        <li><a
+                                                                href="./cyber-security-testing/web-application-security-testing.html">Web
+                                                                Application Security Testing Services</a></li>
+                                                        <li><a
+                                                                href="./cyber-security-testing/network-penetration-testing.html">Network
+                                                                Penetration Testing</a></li>
+                                                        <li><a href="">Web Services & API Assessment</a></li>
+                                                        <li><a href="">Mobile Apps Security Testing</a></li>
+                                                        <li><a href="">Thick Client App Testing</a></li>
+                                                        <li><a href="">IOT Security Testing</a></li>
+                                                    </ul>
+                                                </li>
+
+                                                <!-- ITEM 2 -->
+                                                <li class="acc-item">
+                                                    <button class="acc-btn">
+                                                        <img src="./images/consulting.png" alt="">
+                                                        Security Consulting & Compliance
+                                                        <span class="arrow-icon">▾</span>
+                                                    </button>
+
+                                                    <ul class="acc-content">
+                                                        <li><a href="">External Network Pentesting</a></li>
+                                                        <li><a href="">Internal Network Assessment</a></li>
+                                                        <li><a href="">Firewall Review</a></li>
+                                                        <li><a href="">Router/Switch Security Audit</a></li>
+                                                    </ul>
+                                                </li>
+
+                                                <!-- ITEM 3 -->
+                                                <li class="acc-item">
+                                                    <button class="acc-btn">
+                                                        <img src="./images/forensic.png" alt="">
+                                                        Innovative Cyber Security Services
+                                                        <span class="arrow-icon">▾</span>
+                                                    </button>
+
+                                                    <ul class="acc-content">
+                                                        <li><a href="">AWS Security Assessment</a></li>
+                                                        <li><a href="">Azure Cloud Audit</a></li>
+                                                        <li><a href="">GCP Security Review</a></li>
+                                                    </ul>
+                                                </li>
+
+                                                <!-- ITEM 4 -->
+                                                <li class="acc-item">
+                                                    <button class="acc-btn">
+                                                        <img src="./images/integrity.png" alt="">
+                                                        Cyber Security Audit & Review Services
+                                                        <span class="arrow-icon">▾</span>
+                                                    </button>
+
+                                                    <ul class="acc-content">
+                                                        <li><a href="">Adversary Simulation</a></li>
+                                                        <li><a href="">Red Teaming</a></li>
+                                                        <li><a href="">MITRE ATT&CK Mapping</a></li>
+                                                    </ul>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+
+                                    </li>
+
+                                    <li class="menu-item has-menu products" data-menu="products-dd">
+                                        <a>Products</a>
+                                        <div class="dropdown-container simple-dropdown no-hover" id="products-dd">
+
+                                            <ul>
+                                                <li><a class="prdct-a" target="_blank" href="https://www.cyqer.in/"><img
+                                                            class="product-logo"
+                                                            src="./images/product-logo/cyqer-logo.png" alt=""></a></li>
+                                                <li><a class="prdct-a" target="_blank" href="https://grc360.in/"><img
+                                                            class="product-logo width-img-prdt"
+                                                            src="./images/product-logo/GRC-logo-light.png" alt=""></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item has-menu" data-menu="industries-dd"><a>Industries</a>
+                                        <div class="dropdown-container simple-dropdown" id="products-dd">
+
+                                            <ul>
+                                                <li><a href="./government-industry.html">Government Industry</a></li>
+                                                <li><a href="#">Banking & Finance</a></li>
+                                                <li><a href="#">IT, ITes & Retail Industry</a></li>
+                                                <li><a href="#">Manufacturing & Telecom</a></li>
+                                                <li><a href="#">Healthcare</a></li>
+                                                <li><a href="#">Higher Education</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item has-menu" data-menu="resources-dd"><a>Resources</a>
+                                        <div class="dropdown-container simple-dropdown" id="products-dd">
+
+                                            <ul>
+                                                <li><a href="./blog.html">Blog</a></li>
+                                                <li><a href="./case-studies.html">Case Studies</a></li>
+                                                <li><a href="./white-paper.html">White Paper</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item" data-menu="contact-dd"><a href="./contact.html">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                            <!-- SEARCH -->
+
+                            <div class="header-btn-outer">
+
+                                <button class="search">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#000"
+                                        class="bi bi-search" viewBox="0 0 16 16">
+
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+
+                                    </svg>
+
+                                </button>
+
+                                <a href="#" class="cta-btn fill-icon mt-0">
+                                    <span>Schedule a Meeting</span>
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
+                                            stroke="#000" stroke-width="2" viewBox="0 0 24 24">
+                                            <path d="M5 12h14M12 5l7 7-7 7" />
+                                        </svg>
+                                    </div>
+                                </a>
+
+                                <div class="menu-icon cursor-pointer">
+                                    <span class="icon-ham">
+                                        <i></i>
+                                        <i></i>
+                                        <i></i>
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- ============Hamburger=========== -->
+    <div class="hamenu">
+        <div class="logo-close">
+            <div>
+                <img src="images/TT-logo-light.svg" alt="Threatsys" class="logo">
+            </div>
+            <div class="modal-form">
+                <span class="ham-close-btn"></span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="cont-info full-width for-res">
+                <div class="search-form">
+                    <div class="form-group __web-inspector-hide-shortcut__">
+                        <input type="text" name="search" placeholder="Search">
+                        <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                            </svg></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-links">
+                <ul class="main-menu rest">
+                    <li>
+                        <div class="o-hidden">
+                            <a href="index.html" class="link"><span class="fill-text" data-text="Home">Home</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="o-hidden">
+                            <div class="link cursor-pointer dmenu"><span class="fill-text"
+                                    data-text="Company">Company</span> <i></i></div>
+                        </div>
+                        <div class="ham-sub-menu">
+                            <ul>
+                                <li><a href="./about.html" class="sub-link">About</a></li>
+                                <li><a href="./core-values.html" class="sub-link">Core Values</a></li>
+                                <li><a href="./Teams.html" class="sub-link">Leadership Team</a></li>
+                                <li><a href="./careers.html" class="sub-link">We are Hiring</a></li>
+                                <li><a href="./why-choose-us.html" class="sub-link">Why Choose Us</a></li>
+                                <li><a href="./locations.html" class="sub-link">Our Locations</a></li>
+                                <li><a href="./news-coverage.html" class="sub-link">News Coverage</a></li>
+                                <li><a href="./faq.html" class="sub-link">FAQ</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="o-hidden">
+                            <div class="link cursor-pointer dmenu"><span class="fill-text"
+                                    data-text="Services">Services</span> <i></i>
+                            </div>
+                        </div>
+                        <div class="ham-sub-menu">
+                            <ul>
+                               
+
+                                 <li><a class="sub-link" href="./cyber-security-testing/web-application-security-testing.html">Web
+                                        Application Security Testing Services</a></li>
+                                <li><a class="sub-link"
+                                        href="./cyber-security-testing/network-penetration-testing.html">Network
+                                        Penetration Testing</a></li>
+                                <li><a class="sub-link" href="">Web Services & API Assessment</a></li>
+                                <li><a class="sub-link" href="">Mobile Apps Security Testing</a></li>
+                                <li><a class="sub-link" href="">Thick Client App Testing</a></li>
+                                <li><a class="sub-link" href="">IOT Security Testing</a></li>
+
+                                <li><a class="sub-link" href="">External Network Pentesting</a></li>
+                                <li><a class="sub-link" href="">Internal Network Assessment</a></li>
+                                <li><a class="sub-link" href="">Firewall Review</a></li>
+                                <li><a class="sub-link" href="">Router/Switch Security Audit</a></li>
+
+                                <li><a class="sub-link" href="">AWS Security Assessment</a></li>
+                                <li><a class="sub-link" href="">Azure Cloud Audit</a></li>
+                                <li><a class="sub-link" href="">GCP Security Review</a></li>
+
+                                <li><a class="sub-link" href="">Adversary Simulation</a></li>
+                                <li><a class="sub-link" href="">Red Teaming</a></li>
+                                <li><a class="sub-link" href="">MITRE ATT&CK Mapping</a></li>
+ 
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="o-hidden">
+                            <div class="link cursor-pointer dmenu"><span class="fill-text"
+                                    data-text="Products">Products</span> <i></i>
+                            </div>
+                        </div>
+                        <div class="ham-sub-menu">
+                            <ul>
+                                <li><a href="https://www.cyqer.in/" target="_blank" class="sub-link">Cyqer</a>
+                                </li>
+                                <li><a href="https://grc360.in/" target="_blank" class="sub-link">GRC360</a></li>
+
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="o-hidden">
+                            <div class="link cursor-pointer dmenu"><span class="fill-text"
+                                    data-text="Industries">Industries</span> <i></i>
+                            </div>
+                        </div>
+                        <div class="ham-sub-menu">
+                            <ul>
+                                <li><a href="https://www.cyqer.in/" target="_blank" class="sub-link">Government
+                                        Industry</a>
+                                </li>
+                                <li><a href="https://grc360.in/" target="_blank" class="sub-link">Banking & Finance</a>
+                                </li>
+                                <li><a href="https://grc360.in/" target="_blank" class="sub-link">IT, ITes & Retail
+                                        Industry</a></li>
+                                <li><a href="https://grc360.in/" target="_blank" class="sub-link">Manufacturing &
+                                        Telecom</a></li>
+                                <li><a href="https://grc360.in/" target="_blank" class="sub-link">Healthcare</a></li>
+                                <li><a href="https://grc360.in/" target="_blank" class="sub-link">Higher Education</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                   <li>
+                        <div class="o-hidden">
+                            <div class="link cursor-pointer dmenu"><span class="fill-text"
+                                    data-text="Resources">Resources</span> <i></i>
+                            </div>
+                        </div>
+                        <div class="ham-sub-menu">
+                            <ul>
+                                <li><a href="https://www.cyqer.in/" target="_blank" class="sub-link">Blog</a>
+                                </li>
+                                <li><a href="https://grc360.in/" target="_blank" class="sub-link">Case Studies</a>
+                                </li>
+                                <li><a href="https://grc360.in/" target="_blank" class="sub-link">White Paper</a></li>
+                                
+                            </ul>
+                        </div>
+                    </li>
+                    
+
+                    <li>
+                        <div class="o-hidden">
+                            <a href="./contact.html" class="link"><span class="fill-text"
+                                    data-text="Contact Us">Contact Us</span></a>
+                        </div>
+
+                    </li>
+                  
+                </ul>
+            </div>
+
+            <!-- <div class="col-lg-3 col-md-3 d-flex align-items-end">
+                    <div class="cont-info full-width">
+                        <div class="contact-item">
+                            <h5 class="mb-15">Get In Touch</h5>
+                            <p>3rd Floor, F3, Ryan Tower, Technology Corridor,
+                                near Trident Academy, Chandaka Industrial Estate,
+                                Infocity, Chandrasekharpur, Bhubaneswar, Odisha 751024</p>
+                            <p class="underline main-color mt-3 mb-1"><a style="color: #f7c70c;"
+                                    href="#0">91-9668200222</a></p>
+                            <p><a style="color: #f7c70c;" href="#0">support@threatsys.co.in</a></p>
+                        </div>
+                        <div class="search-form">
+                            <div class="form-group __web-inspector-hide-shortcut__">
+                                <input type="text" name="search" placeholder="Search">
+                                <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                                        class="bi bi-search" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                    </svg></button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div> -->
+
+        </div>
+    </div>
+
+    <!-- ============header-search=========== -->
+    <div class="search__popup">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="search__wrapper">
+                        <div class="search__close">
+                            <button type="button" class="search-close-btn">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17 1L1 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path d="M1 1L17 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="search__form">
+                            <form action="#">
+                                <div class="search__input">
+                                    <input class="search-input-field" type="text" placeholder="Type keywords here">
+                                    <span class="search-focus-border"></span>
+                                    <button type="submit">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#000"
+                                            class="bi bi-search" viewBox="0 0 16 16">
+
+                                            <path
+                                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0">
+                                            </path>
+
+                                        </svg>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="search-popup-overlay"></div>
+    <!-- header-search-end -->
+
+
+    <section class="creative-showcase--slider">
+        <div class="banner-horizental">
+            <div class="swiper swiper-container-h">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-bg overlay-dark"
+                            style="background-image: url(https://imgpanda.com/upload/ib/gCzPpwgzAw.png);"
+                            data-swiper-parallax="1152">
+                            <div class="slide-container">
+                                <div class="slide-row">
+                                    <div class="slider-content">
+                                        <h6 class="slide-subtitle" data-swiper-parallax="-1000">Innovation in Cyber
+                                            Defense</h6>
+                                        <h1 class="slide-heading">
+                                            <a href="">
+                                                <span data-swiper-parallax="-2000" class="yel-gradient"> Empowering
+                                                    Security </span>
+                                                <br>
+                                                <span data-swiper-parallax="-3000" class="fw-300"> with Next-Gen
+                                                    Solutions</span>
+                                            </a>
+                                        </h1>
+                                        <h5 class="slider-sub" data-swiper-parallax="-4000">Safeguarding your business
+                                            with AI-driven cybersecurity products.</h5>
+
+                                        <a href="#" class="cta-btn" data-swiper-parallax="-5000">
+                                            <span>Let's Validate Defenses</span>
+                                            <div class="icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="none" stroke="#000" stroke-width="2" viewBox="0 0 24 24">
+                                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-container">
+                                <video autoplay="" loop="" muted="" baba-icon="yes">
+                                    <source src="./images/banner-video/Banner-Video-1.webm" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-bg overlay-dark"
+                            style="background-image: url(https://imgpanda.com/upload/ib/gCzPpwgzAw.png);"
+                            data-swiper-parallax="1152">
+                            <div class="slide-container">
+                                <div class="slide-row">
+                                    <div class="slider-content">
+                                        <h6 class="slide-subtitle" data-swiper-parallax="-1000">Trust Through Compliance
+                                        </h6>
+                                        <h1 class="slide-heading">
+                                            <a href="">
+                                                <span data-swiper-parallax="-2000" class="yel-gradient">Building
+                                                    Resilience </span>
+                                                <br>
+                                                <span data-swiper-parallax="-3000" class="fw-300"> with Expert
+                                                    Testing</span>
+                                            </a>
+                                        </h1>
+                                        <h5 class="slider-sub" data-swiper-parallax="-4000">Ensuring security and
+                                            compliance through advanced VAPT services.</h5>
+
+                                        <a href="#" class="cta-btn" data-swiper-parallax="-5000">
+                                            <span>Let's Validate Defenses</span>
+                                            <div class="icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="none" stroke="#000" stroke-width="2" viewBox="0 0 24 24">
+                                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-container">
+                                <video autoplay="" loop="" muted="" baba-icon="yes">
+                                    <source src="./images/banner-video/Banner-Video-4.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-bg overlay-dark"
+                            style="background-image: url(https://imgpanda.com/upload/ib/gCzPpwgzAw.png);"
+                            data-swiper-parallax="1152">
+                            <div class="slide-container">
+                                <div class="slide-row">
+                                    <div class="slider-content">
+                                        <h6 class="slide-subtitle" data-swiper-parallax="-1000">Global Reach, Local
+                                            Expertise</h6>
+                                        <h1 class="slide-heading">
+                                            <a href="">
+                                                <span data-swiper-parallax="-2000" class="yel-gradient">Securing
+                                                    Enterprises </span>
+                                                <br>
+                                                <span data-swiper-parallax="-3000" class="fw-300"> Across Borders</span>
+                                            </a>
+                                        </h1>
+                                        <h5 class="slider-sub" data-swiper-parallax="-4000">Delivering trusted cyber
+                                            solutions worldwide with proven excellence.</h5>
+
+                                        <a href="#" class="cta-btn" data-swiper-parallax="-5000">
+                                            <span>Let's Validate Defenses</span>
+                                            <div class="icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="none" stroke="#000" stroke-width="2" viewBox="0 0 24 24">
+                                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-container">
+                                <video autoplay="" loop="" muted="" baba-icon="yes">
+                                    <source src="./images/banner-video/Banner-Video-5.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-bg overlay-dark"
+                            style="background-image: url(https://imgpanda.com/upload/ib/gCzPpwgzAw.png);"
+                            data-swiper-parallax="1152">
+                            <div class="slide-container">
+                                <div class="slide-row">
+                                    <div class="slider-content">
+                                        <h6 class="slide-subtitle" data-swiper-parallax="-1000"> Intelligence That
+                                            Protects</h6>
+                                        <h1 class="slide-heading">
+                                            <a href="">
+                                                <span data-swiper-parallax="-2000" class="yel-gradient"> Redefining
+                                                    Cyber </span>
+                                                <br>
+                                                <span data-swiper-parallax="-3000" class="fw-300">Defense with AI</span>
+                                            </a>
+                                        </h1>
+                                        <h5 class="slider-sub" data-swiper-parallax="-4000">Transforming cybersecurity
+                                            with predictive, AI-powered protection.</h5>
+
+                                        <a href="#" class="cta-btn" data-swiper-parallax="-5000">
+                                            <span>Let's Validate Defenses</span>
+                                            <div class="icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="none" stroke="#000" stroke-width="2" viewBox="0 0 24 24">
+                                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-container">
+                                <video autoplay="" loop="" muted="" baba-icon="yes">
+                                    <source src="./images/banner-video/Banner-Video-3.webm" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-wrapper creative-button--wrapper">
+                    <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide">
+                        <div>
+                            <span>Next</span>
+                        </div>
+                        <div><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                    <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide">
+                        <div><i class="fas fa-chevron-left"></i></div>
+                        <div>
+                            <span>Prev</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section p-0">
+        <div class="marquee">
+            <div class="marquee__inner">
+
+                <div class="marquee__item">
+                    Threatsys wins Best Cybersecurity Company at Rising Odisha Vision 2036.
+                    <span class="marquee__seperator">
+                        <img class="w-shl" src="./images/shield2.png" alt="shield">
+                    </span>
+                </div>
+
+
+                <div class="marquee__item">
+                    Threatsys showcases future cyber defense at NASSCOM Event.
+                    <span class="marquee__seperator">
+                        <img class="w-shl" src="./images/shield2.png" alt="shield">
+                    </span>
+                </div>
+
+                <div class="marquee__item">
+                    Threatsys wins Best Cybersecurity Company at Rising Odisha Vision 2036.
+                    <span class="marquee__seperator">
+                        <img class="w-shl" src="./images/shield2.png" alt="shield">
+                    </span>
+                </div>
+                <!-- Duplicate for continuous scroll -->
+                <div class="marquee__item">
+                    Threatsys wins Best Cybersecurity Company at Rising Odisha Vision 2036.
+                    <span class="marquee__seperator">
+                        <img class="w-shl" src="./images/shield2.png" alt="shield">
+                    </span>
+                </div>
+
+                <div class="marquee__item">
+                    Threatsys showcases future cyber defense at NASSCOM Event.
+                    <span class="marquee__seperator">
+                        <img class="w-shl" src="./images/shield2.png" alt="shield">
+                    </span>
+                </div>
+
+                <div class="marquee__item">
+                    Threatsys wins Best Cybersecurity Company at Rising Odisha Vision 2036.
+                    <span class="marquee__seperator">
+                        <img class="w-shl" src="./images/shield2.png" alt="shield">
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us section">
+        <img src="./images/about-bg2.png" alt="Logo" class="shd-bg-logo">
+        <div class="container">
+
+            <div class="row align-items-center">
+                <div class="col-lg-7 col-md-12">
+
+                    <div class="content-about">
+                        <h3 class="wow fadeInLeft top-text">About Us</h3>
+                        <h2 class="wow fadeInLeft down-text-m" data-wow-delay="0.1s" data-cursor="-opaque"> Defending
+                            the Digital Future
+                            <br> <span class="gradient-text">with Intelligence and Innovation </span>
+                        </h2>
+
+                        <h6 class="wow fadeInLeft">We Protect $1Billion Transactions every year.</h6>
+                        <p class="wow fadeInLeft" data-wow-delay="0.2s">Threatsys is a CERT-IN empanelled and ISO 27001,
+                            ISO 20000, SOC 2 Type 2 certified global cybersecurity company committed to securing
+                            enterprises in an increasingly connected world. We empower organizations to protect their
+                            digital ecosystems through advanced threat intelligence, compliance automation, and
+                            AI-powered security solutions.Our comprehensive suite of products helps businesses detect,
+                            prevent, and respond to threats with precision and confidence.
+                        </p>
+
+                        <div class="cta-box wow fadeInLeft" data-wow-delay="0.3s">
+                            <div class="cta-text">
+                                <h4 class="d-none">We protect what matters most — your trust, data, and digital growth.
+                                    Your protection, our priority.</h4>
+
+                                <a href="#" class="cta-btn fill-icon d-none">
+                                    <span>Get Secured Now</span>
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
+                                            stroke="#000" stroke-width="2" viewBox="0 0 24 24">
+                                            <path d="M5 12h14M12 5l7 7-7 7" />
+                                        </svg>
+                                    </div>
+                                </a>
+                                <section class="meeting-card-section">
+                                    <div class="meeting-card">
+
+
+                                        <button class="subscribe-btn">
+                                            <div class="icon-box">
+                                                <img src="./images/handshake.png" alt="meeting icon">
+                                            </div>
+                                            <div class="text-box">
+                                                <h4>Schedule a Meeting</h4>
+
+                                            </div>
+                                        </button>
+
+
+                                    </div>
+                                </section>
+
+                            </div>
+                        </div>
+
+                        <!-- <ul class="services wow fadeInRight" data-wow-delay="0.4s">
+                            <li>Threat Detection and Monitoring</li>
+                            <li>Access Control Management</li>
+                            <li>Security Awareness Training</li>
+                        </ul> -->
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-12 for-center-align">
+
+                    <div class="row staticstic-container">
+                        <span class="middle-point"></span>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 static-col">
+                            <div class="join-us-statistics wow animate__fadeInDown"
+                                style="visibility: visible; animation-name: fadeInDown;">
+
+                                <span class="static-num count-text" data-speed="1500" data-stop="2000"
+                                    data-suffix="+">2000+</span>
+                                <span class="static-txt">Satisfied Clients</span>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 static-col">
+                            <div class="join-us-statistics wow animate__fadeInDown"
+                                style="visibility: visible; animation-name: fadeInDown;">
+
+                                <span class="static-num count-text" data-speed="1500" data-stop="15"
+                                    data-suffix="+">15+</span>
+                                <span class="static-txt">Years of Excellence </span>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 static-col">
+                            <div class="join-us-statistics wow animate__fadeInUp"
+                                style="visibility: visible; animation-name: fadeInUp;">
+
+                                <span class="static-num count-text" data-speed="1500" data-stop="8000"
+                                    data-suffix="+">8000+</span>
+                                <span class="static-txt">Projects Delivered</span>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 static-col">
+                            <div class="join-us-statistics wow animate__fadeInUp"
+                                style="visibility: visible; animation-name: fadeInUp;">
+
+                                <span class="static-num count-text" data-speed="1500" data-stop="25"
+                                    data-suffix="+">25+</span>
+                                <span class="static-txt">Industries Secured</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="clientele-section section clientele-section-cont">
+        <div class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+
+                        <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque">
+                            Threatsys is
+                            trusted
+                            by
+                            <br> <span class="">our prestigious clientele <br>since 2014</span>
+                        </h2>
+                        <img src="./images/TT.svg" alt="Logo" class="line-logo-img">
+                    </div>
+
+                    <div class="col-md-8">
+
+
+                        <div class="slider" style="--width: 150px; --height: 50px; --imageQuantity: 10">
+                            <div class="list">
+                                <div class="item">
+                                    <img src="images/LOGO/1.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/2.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/3.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/4.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/5.png" alt="Logo" />
+                                </div>
+
+                                <div class="item">
+                                    <img src="images/LOGO/6.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/7.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/8.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/9.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/10.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/11.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/12.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/13.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/14.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/15.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/16.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/17.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/18.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/19.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/20.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/21.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/22.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/23.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/24.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/25.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/26.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/27.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/28.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/29.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/30.png" alt="Logo" />
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                        <div class="slider" reverse="true" style="--width: 200px; --height: 200px; --imageQuantity: 7">
+                            <div class="list">
+                                <div class="item">
+                                    <img src="images/LOGO/31.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/32.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/33.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/34.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/35.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/36.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/37.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/38.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/39.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/40.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/41.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/42.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/43.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/44.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/45.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/46.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/47.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/48.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/49.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/50.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/51.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/52.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/53.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/54.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/55.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/56.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/57.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/58.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/59.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/60.png" alt="Logo" />
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="slider " style="--width: 150px; --height: 50px; --imageQuantity: 10">
+                            <div class="list">
+                                <div class="item">
+                                    <img src="images/LOGO/61.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/62.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/63.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/64.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/65.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/66.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/67.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/68.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/69.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/70.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/71.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/72.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/73.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/74.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/75.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/76.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/77.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/78.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/79.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/80.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/81.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/82.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/83.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/84.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/85.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/86.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/87.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/88.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/89.png" alt="Logo" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/LOGO/90.png" alt="Logo" />
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-services section">
+        <img class="services_left" src="./images/services_left_shape.png" alt="bg">
+        <img class="services_right" src="./images/services_right_shape.png" alt="bg">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <!-- Section Title Start -->
+                    <div class="text-align-center">
+
+                        <h3 class="wow fadeInUp top-text text-align-center">Our Services</h3>
+                        <h2 class="wow fadeInUp text-white" data-wow-delay="0.2s" data-cursor="-opaque"> Advanced
+                            AI-powered
+                            <br> <span class="gradient-yl">cyber security services & solutions</span>
+                        </h2>
+
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-lg-0 mb-4 pr-lg-0 pl-lg-0 pr-3 pl-3">
+                    <!-- Service Item Start -->
+
+                    <div class="service-item wow fadeInUp">
+                        <div class="icon-box">
+                            <img src="./images/consulting.png" alt="Image">
+                        </div>
+
+                        <div class="service-title">
+                            <h3><a href="#">Cyber Security Consulting</a></h3>
+                        </div>
+                        <div class="service-content">
+                            <p>We bring deep expertise in cybersecurity consulting, assessing your security posture and
+                                providing a clear path to protect your business.</p>
+                        </div>
+                        <div class="service-btn">
+                            <a href="service-single.html" title="View Cyber Security Consulting">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <!-- Overlay Content -->
+                        <div class="overlay">
+                            <ul>
+                                <li><a href="">Cyber Security Consulting</a></li>
+                                <li><a href="">CERT-IN Cyber Security Audit</a></li>
+                                <li><a href="">SEBI Compliance Audit</a></li>
+                                <li><a href="">DL SAR Compliance Audit</a></li>
+                                <li><a href="">IRDAI Security Audit</a></li>
+                                <li><a href="">RBI Security Audit Services</a></li>
+                            </ul>
+                            <div class="service-btn">
+                                <a href="service-single.html" title="View Cyber Security Consulting">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-lg-0 mb-4 pr-lg-0 pl-lg-0 pr-3 pl-3">
+                    <!-- Service Item Start -->
+                    <div class="service-item wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="icon-box">
+                            <img src="./images/security-.png" alt="Image">
+                        </div>
+
+                        <div class="service-title">
+                            <h3><a href="#">Cyber Security Testing</a></h3>
+                        </div>
+                        <div class="service-content">
+                            <p>Our security testing tackles mission-critical challenges, ensuring your business stays
+                                hack-proof with Threatsys.</p>
+                        </div>
+                        <div class="service-btn">
+                            <a href="service-single.html" title="View Cyber Security Consulting">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <!-- Overlay Content -->
+                        <div class="overlay">
+                            <ul>
+                                <li><a href="">Web Application Security Testing</a></li>
+                                <li><a href="">Network Penetration Testing</a></li>
+                                <li><a href="">Mobile Apps Security Testing</a></li>
+                                <li><a href="">Thick Client Security Testing</a></li>
+                                <li><a href="">IOT Security Testing</a></li>
+                                <li><a href="">SCADA Security Testing</a></li>
+                                <li><a href="">Enterprise Security Testing</a></li>
+                            </ul>
+                            <div class="service-btn">
+                                <a href="service-single.html" title="View Cyber Security Consulting">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-lg-0 mb-4 pr-lg-0 pl-lg-0 pr-3 pl-3">
+                    <!-- Service Item Start -->
+
+                    <div class="service-item service_last_box wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="icon-box">
+                            <img src="./images/safe.png" alt="Image">
+                        </div>
+
+                        <div class="service-title">
+                            <h3><a href="#">Cyber Security Compliances</a></h3>
+                        </div>
+                        <div class="service-content">
+                            <p>Our Cybersecurity Compliance Services eliminate regulatory confusion, address threats,
+                                reduce inefficiencies, and let you focus on business growth.</p>
+                        </div>
+                        <div class="service-btn">
+                            <a href="service-single.html" title="View Cyber Security Consulting">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <!-- Overlay Content -->
+                        <div class="overlay">
+                            <ul>
+                                <li><a href="">ISO Compliance</a></li>
+                                <li><a href="">PCI DSS Compliance</a></li>
+                                <li><a href="">SOC2 Compliance</a></li>
+                                <li><a href="">HIPAA Compliance</a></li>
+                                <li><a href="">GDPR Compliance</a></li>
+                                <li><a href="">FISMA Compliance</a></li>
+                                <li><a href="">GRC Compliance</a></li>
+                            </ul>
+                            <div class="service-btn">
+                                <a href="service-single.html" title="View Cyber Security Consulting">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-lg-0 mb-4 pr-lg-0 pl-lg-0 pr-3 pl-3">
+                    <!-- Service Item Start -->
+                    <div class="service-item brd-b0 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="icon-box">
+                            <img src="./images/forensic.png" alt="Image">
+                        </div>
+
+                        <div class="service-title">
+                            <h3><a href="#">Cyber Forensic & Investigation</a></h3>
+                        </div>
+                        <div class="service-content">
+                            <p>Our Cyber Forensics & Investigation solutions deliver attack context, full infrastructure
+                                visibility, expert intelligence, and frontline insights.</p>
+                        </div>
+                        <div class="service-btn">
+                            <a href="service-single.html" title="View Cyber Security Consulting">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <!-- Overlay Content -->
+                        <div class="overlay">
+                            <ul>
+                                <li><a href="">Cyber Forensics and Incident Response</a></li>
+                                <li><a href="">Cyber Crime Investigation</a></li>
+                                <li><a href="">Online Reputation Management</a></li>
+                            </ul>
+                            <div class="service-btn">
+                                <a href="service-single.html" title="View Cyber Security Consulting">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-lg-0 mb-4 pr-lg-0 pl-lg-0 pr-3 pl-3">
+                    <!-- Service Item Start -->
+                    <div class="service-item brd-b0 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="icon-box">
+                            <img src="./images/reliability.png" alt="Image">
+                        </div>
+
+                        <div class="service-title">
+                            <h3><a href="#">Managed Cyber Security Solutions</a></h3>
+                        </div>
+                        <div class="service-content">
+                            <p>Looking to outsource managed cybersecurity? Our Evaluation Checklist helps you ask the
+                                right questions and achieve results aligned with your business needs.</p>
+                        </div>
+                        <div class="service-btn">
+                            <a href="service-single.html" title="View Cyber Security Consulting">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <!-- Overlay Content -->
+                        <div class="overlay">
+                            <ul>
+                                <li><a href="">Managed Security Services</a></li>
+                                <li><a href="">Corporate Infrastructure Security</a></li>
+                                <li><a href="">SOC as a Services</a></li>
+                                <li><a href="">Online Reputation Management</a></li>
+                            </ul>
+                            <div class="service-btn">
+                                <a href="service-single.html" title="View Cyber Security Consulting">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-lg-0 mb-4 pr-lg-0 pl-lg-0 pr-3 pl-3">
+                    <!-- Service Item Start -->
+
+                    <div class="service-item service_last_box service_lower_box wow fadeInUp" data-wow-delay="1s">
+                        <div class="icon-box">
+                            <img src="./images/integrity.png" alt="Image">
+                        </div>
+
+                        <div class="service-title">
+                            <h3><a href="#">360° Cyber Security as a Services</a></h3>
+                        </div>
+                        <div class="service-content">
+                            <p>Threatsys delivers flexible Cybersecurity-as-a-Service, eliminating the need for constant
+                                investment in hardware and software.</p>
+                        </div>
+                        <div class="service-btn">
+                            <a href="service-single.html" title="View Cyber Security Consulting">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <!-- Overlay Content -->
+                        <div class="overlay">
+                            <ul>
+                                <li><a href="">DPDP Compliance Services</a></li>
+                                <li><a href="">STQC Cyber Security Audit Services</a></li>
+                                <li><a href="">VCISO Consulting Services</a></li>
+                                <li><a href="">Take Down Services</a></li>
+                                <li><a href="">Dak Web Monitoring Services</a></li>
+                                <li><a href="">Root Cause Analysis Services</a></li>
+                                <li><a href="">ISO 27017 Compliance Audit</a></li>
+                            </ul>
+                            <div class="service-btn">
+                                <a href="service-single.html" title="View Cyber Security Consulting">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service Item End -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bento-section">
+        <div class="container">
+            <!-- Card 1 -->
+            <div class="bento-grid">
+                <div class="card large wow fadeInLeft">
+                    <div class="inr-border">
+                        <h2 class="">Securing Offensively by using AI</h2>
+                        <p style="margin-bottom: 13px;">Don't wait for attack, go on the offense</p>
+
+                        <div class="orbit-container">
+                            <div class="orbit1">
+                            </div>
+                            <div class="orbit2">
+                            </div>
+                            <div class="orbit3">
+                            </div>
+
+
+                            <div class="icon-orbit icon1">
+                                <img src="./images/TT.png" alt="Icon">
+                            </div>
+                            <div class="icon-orbit icon2">
+                                <img src="./images/TIWING.png" alt="Icon">
+                            </div>
+                            <div class="icon-orbit icon3">
+                                <img src="./images/GRC360.png" alt="Icon">
+                            </div>
+                            <div class="icon-orbit icon4">
+                                <img src="./images/TA.png" alt="Icon">
+                            </div>
+                            <div class="icon-orbit icon5">
+                                <img src="./images/Cyqer.png" alt="Icon">
+                            </div>
+                            <div class="icon-orbit icon6">
+                                <img src="./images/TIWING.png" alt="Icon">
+                            </div>
+                            <div class="icon-orbit icon7">
+                                <img src="./images/GRC360.png" alt="Icon">
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card awards wow fadeInRight">
+                    <div class="inr-border">
+                        <h2 class="">Recognitions of Excellence</h2>
+                        <p>Stacked with Awards, Stepping with Success</p>
+                        <div class="awards-icons">
+                            <div class="swiper awardsSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="award">
+                                            <img src="./images/Award Achieved-01.png" alt="Image">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="award">
+                                            <img src="./images/Award Achieved-02.png" alt="Image">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="award">
+                                            <img src="./images/Award Achieved-03.png" alt="Image">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="award">
+                                            <img src="./images/Award Achieved-04.png" alt="Image">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="award">
+                                            <img src="./images/Award Achieved-05.png" alt="Image">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Optional pagination / arrows -->
+                                <!-- <div class="swiper-pagination"></div> -->
+                            </div>
+                        </div>
+                        <div class="awards-icons">
+                            <div class="swiper awardsSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="award">
+                                            <img src="./images/Award Achieved-06.png" alt="Image">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="award">
+                                            <img src="./images/Award Achieved-07.png" alt="Image">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="award">
+                                            <img src="./images/Award Achieved-08.png" alt="Image">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="award">
+                                            <img src="./images/Award Achieved-09.png" alt="Image">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="award">
+                                            <img src="./images/Award Achieved-10.png" alt="Image">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Optional pagination / arrows -->
+                                <!-- <div class="swiper-pagination"></div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card stats wow fadeInLeft">
+                    <div class="inr-border">
+                        <h2 class="">Data That Speaks Volumes</h2>
+                        <p>Turn insights into confident decisions</p>
+                        <div class="stats-container">
+                            <div class="stat">
+                                <div class="stat-img">
+                                    <img src="./images/folder.png" alt="Image">
+                                </div>
+
+                                <h3 class="count-text" data-speed="1500" data-stop="250" data-suffix="+">250+</h3>
+                                <p>Bugs Found & Reported</p>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-img"><img src="./images/professional-success.png" alt="Image"></div>
+
+                                <h3 class="count-text" data-speed="1500" data-stop="120" data-suffix="+">120+</h3>
+                                <p>Skilled Experts</p>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-img"> <img src="./images/global-security.png" alt="Image"></div>
+
+                                <h3 class="count-text" data-speed="1500" data-stop="150" data-suffix="+">150+</h3>
+                                <p>Hall of Fame</p>
+                            </div>
+
+                            <div class="stat">
+                                <div class="stat-img"> <img src="./images/industry-exp.png" alt="Image"></div>
+
+                                <h3 class="count-text" data-speed="1500" data-stop="8" data-suffix="+">8+</h3>
+                                <p>Countries Presence</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="card breaches wow fadeInRight">
+                    <div class="inr-border">
+                        <h2 class="">Research Book</h2>
+
+                        <!-- Swiper Container -->
+                        <div class="swiper myNewsSwiper d-none">
+                            <div class="swiper-wrapper">
+                                <!-- Each news-box becomes a slide -->
+                                <div class="swiper-slide">
+                                    <a href="/threatsys/images/pdf/document.pdf" class="news-box" target="_blank">
+                                        <div class="newscoverage-img">
+                                            <img src="./images/document-1.jpg" alt="doc">
+                                        </div>
+                                        <div class="magazine-content">
+                                            <h6 class="line-clamp-2">
+                                                Decoding the Dark Web – What Exists Beyond the Surface
+                                            </h6>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="/threatsys/images/pdf/document-2.pdf" class="news-box" target="_blank">
+                                        <div class="newscoverage-img">
+                                            <img src="./images/document-2.jpg" alt="doc">
+                                        </div>
+                                        <div class="magazine-content">
+                                            <h6 class="line-clamp-2">
+                                                Ever wondered how security professionals reverse engineer Android apps?
+
+                                            </h6>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Swiper Pagination & Navigation -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+
+
+                        <div class="magazine-content">
+                            <h6 class="line-clamp-2">
+                                Decoding the Dark Web, What Exists Beyond the Surface
+                            </h6>
+                        </div>
+
+                        <div class="date">
+                            <span class="day">18</span>
+                            <span class="month">MAR</span>
+                        </div>
+
+                        <div class="footer-crd">
+                            <div class="file-info">
+                                <img src="./images/pdf.png" alt="file" class="icon">
+                                <p>Format: PDF,<br>Language: English</p>
+                            </div>
+                            <div class="service-btn">
+                                <a href="/threatsys/images/pdf/document.pdf" target="_blank" title="View PDF">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./images/Wood-art.png" alt="bg" class="bg-wood-art">
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <section class="section ceos-message p-0">
+        <div class="container">
+            <div class="ceo-container">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-5 col-12">
+                        <div class="message-left">
+                            <!-- <div class="circle-1">
+                        <div class="inner-circle"></div>
+                    </div> -->
+                            <img src="./images/round-line.png" alt="Image" class="round-line ">
+
+                            <div class="bg-line1"></div>
+                            <img src="./images/banner-img-2.png" alt="CEO Image" class="ceo-img  wow fadeInLeft">
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-7 col-12">
+
+                        <div class="message-right">
+                            <img src="./images/md-msg-shape.png" alt="shape" class="md-div-shp">
+                            <img src="./images/quotes.png" alt="Logo" class="line-logo-img">
+                            <div class="pbmit-heading-subheading  wow fadeInRight">
+
+                                <h2 class="wow fadeInUp sub-page-mr text-white" data-wow-delay="0.2s"
+                                    data-cursor="-opaque">CEO's
+                                    <span class="gradient-yl">Message</span>
+                                </h2>
+                                <img src="./images/line.png" alt="img" class="header-line">
+                            </div>
+                            <p class="mrb-15 wow fadeInRight">As we celebrate this significant milestone, my sincere
+                                gratitude goes to
+                                our clients, employees, and partners who are the foundation of Threatsys’ success. What
+                                began as a vision to strengthen India’s cybersecurity is now a trusted brand protecting
+                                businesses and citizens globally. We remain guided by our commitment to excellence,
+                                innovation, and resilience. <strong>"Together, we are building a safer digital
+                                    future".</strong></strong></p>
+
+                            <!-- <h5>"Together, we are building a safer digital future".</h5> -->
+
+                            <h4 class="name wow fadeInUp">Deepak Ku Nath</h4>
+                            <h6 class="desg wow fadeInUp">Managing Director & CEO</h6>
+                            <div class="certificate-container wow fadeInUp">
+
+                                <div class="certificate-slide">
+                                    <img src="./images/certificate-deepak-ku-nath-1.png" alt="Image">
+                                    <img src="./images/certificate-deepak-ku-nath-2.png" alt="Image">
+                                    <img src="./images/certificate-deepak-ku-nath-3.png" alt="Image">
+                                    <img src="./images/certificate-deepak-ku-nath-4.png" alt="Image">
+                                    <img src="./images/certificate-deepak-ku-nath-5.png" alt="Image">
+                                    <img src="./images/certificate-deepak-ku-nath-6.jpeg" alt="Image">
+                                    <img src="./images/certificate-deepak-ku-nath-7.png" alt="Image">
+                                    <img src="./images/certificate-deepak-ku-nath-8.png" alt="Image">
+                                    <img src="./images/certificate-deepak-ku-nath-9.png" alt="Image">
+                                    <img src="./images/certificate-deepak-ku-nath-10.png" alt="Image">
+                                    <img src="./images/certificate-deepak-ku-nath-11.jpg" alt="Image">
+                                    <img src="./images/certificate-deepak-ku-nath-12.png" alt="Image">
+                                    <img src="./images/certificate-deepak-ku-nath-13.png" alt="Image">
+                                    <img src="./images/certificate-deepak-ku-nath-14.png" alt="Image">
+                                    <img src="./images/certificate-deepak-ku-nath-15.png" alt="Image">
+                                    <img src="./images/certificate-deepak-ku-nath-16.png" alt="Image">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+
+    <section class="section industries-section">
+        <h3 class="wow fadeInUp top-text text-align-center">Industries</h3>
+        <h2 class="wow fadeInUp text-align-center" data-wow-delay="0.2s" data-cursor="-opaque">The Service
+            <span class="gradient-text">We Secured Seamlessly</span>
+        </h2>
+        <div class="container">
+            <div class="panels">
+                <div class="panel active bg--one">
+                    <div class="content-up">
+                        <span>Government Industry</span>
+                        <ul>
+                            <li><a href="">Risk & Vulnerability Assessments</a></li>
+                            <li><a href="">Penetration Testing</a></li>
+                            <li><a href="">Governance, Risk & Compliance (GRC)</a></li>
+                            <li><a href="">Security Strategy & Policy Development</a></li>
+                            <li><a href="">e-Governance Application Security</a></li>
+                            <li><a href="">Cloud & Infrastructure Security Audit</a></li>
+                            <li><a href="">Incident Response & Forensics</a></li>
+                            <li><a href="">CERT-In & regulatory compliance support</a></li>
+                        </ul>
+                        <a href="#" class="cta-btn" data-swiper-parallax="-5000">
+                            Know More
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="#000"
+                                    stroke-width="2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="panel bg--two">
+                    <div class="content-up">
+                        <span>Banking & Finance</span>
+                        <ul>
+                            <li><a href="">Core Banking & Payment System Security Testing</a></li>
+                            <li><a href="">Mobile Banking & Wallet Security Assessment</a></li>
+                            <li><a href="">ATM, POS & Card Network Testing</a></li>
+                            <li><a href="">Transaction Fraud Risk Assessment</a></li>
+                            <li><a href="">RBI & PCI-DSS Compliance Testing</a></li>
+                            <li><a href="">API Security & Identity Access Review</a></li>
+                            <li><a href="">Cloud & Infrastructure Hardening</a></li>
+                            <li><a href="">Continuous Monitoring & Threat Hunting</a></li>
+                        </ul>
+                        <a href="#" class="cta-btn" data-swiper-parallax="-5000">
+                            Know More
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="#000"
+                                    stroke-width="2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="panel bg--three">
+                    <div class="content-up">
+                        <span>IT, ITes & Retail Industry</span>
+                        <ul>
+                            <li><a href="">Web, Mobile & SaaS Platform Security Testing</a></li>
+                            <li><a href="">API & Microservices Security</a></li>
+                            <li><a href="">E-commerce & POS System Security</a></li>
+                            <li><a href="">Cloud Security & Configuration Review</a></li>
+                            <li><a href="">Supply-Chain & Vendor Risk Assessment</a></li>
+                            <li><a href="">Identity & Access Management Review</a></li>
+                            <li><a href="">Infrastructure & Network Penetration Testing</a></li>
+                            <li><a href="">DevSecOps & Secure SDLC Implementation</a></li>
+                        </ul>
+                        <a href="#" class="cta-btn" data-swiper-parallax="-5000">
+                            Know More
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="#000"
+                                    stroke-width="2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="panel bg--four">
+                    <div class="content-up">
+                        <span>Manufacturing & Telecom</span>
+                        <ul>
+                            <li><a href="">SCADA / ICS / OT Security Testing</a></li>
+                            <li><a href="">IoT & Embedded Device Security</a></li>
+                            <li><a href="">Network Architecture Review & Hardening</a></li>
+                            <li><a href="">Supply-Chain & Hardware Security Assessment</a></li>
+                            <li><a href="">Cloud, Data Center & Telecom Infra Security</a></li>
+                            <li><a href="">Firmware & Protocol-Level Analysis</a></li>
+                            <li><a href="">Business Continuity & Disaster Recovery Review</a></li>
+                            <li><a href="">Threat Monitoring & Anomaly Detection</a></li>
+                        </ul>
+                        <a href="#" class="cta-btn" data-swiper-parallax="-5000">
+                            Know More
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="#000"
+                                    stroke-width="2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="panel bg--five">
+                    <div class="content-up">
+                        <span>Healthcare</span>
+                        <ul>
+                            <li><a href="">Hospital Network & Server Security</a></li>
+                            <li><a href="">EMR/EHR Application Security Testing</a></li>
+                            <li><a href="">Governance, Strategy, Policy</a></li>
+                            <li><a href="">Medical Device & IoT Equipment Testing</a></li>
+                            <li><a href="">Patient Data Privacy & DPDP Compliance</a></li>
+                            <li><a href="">Ransomware Readiness & Response Planning</a></li>
+                            <li><a href="">Cloud & Telemedicine Platform Security</a></li>
+                            <li><a href="">API, Mobile App & Portal PenTesting</a></li>
+                            <li><a href="">Continuous Vulnerability Management</a></li>
+
+                        </ul>
+                        <a href="#" class="cta-btn" data-swiper-parallax="-5000">
+                            Know More
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="#000"
+                                    stroke-width="2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="panel bg--six">
+                    <div class="content-up">
+                        <span>Higher Education</span>
+                        <ul>
+                            <li><a href="">LMS & Student Portal Security Testing</a></li>
+                            <li><a href="">Campus Network & Wi-Fi Infrastructure Audit</a></li>
+                            <li><a href="">Identity & Access Management for Students/Staff</a></li>
+                            <li><a href="">Research Data & IP Protection</a></li>
+                            <li><a href="">Cloud & Virtual Classroom Security</a></li>
+                            <li><a href="">Phishing Simulation & Awareness Training</a></li>
+                            <li><a href="">Application, API & Server Hardening</a></li>
+                            <li><a href="">Data Privacy & Compliance Readiness</a></li>
+
+                        </ul>
+                        <a href="#" class="cta-btn" data-swiper-parallax="-5000">
+                            Know More
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="#000"
+                                    stroke-width="2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-scroll_section section p-0">
+
+        <!-- LEFT IMAGES -->
+        <div class="grid-col home-scroll_visual page-padding">
+            <div class="home-scroll_img-wrap w-dyn-list">
+                <div role="list" class="home-scroll_img-list w-dyn-items">
+
+                    <!-- 1 → Matches First Text Block -->
+                    <div role="listitem" class="home-scroll_img-item w-dyn-item">
+                        <img alt="Image" loading="lazy" src="./images/awards-img-1.jpg" class="home-scroll_img" />
+                    </div>
+
+                    <!-- 2 → Matches Second Text Block -->
+                    <div role="listitem" class="home-scroll_img-item w-dyn-item">
+                        <img alt="Image" loading="lazy" src="./images/awards-img-2.jpg" class="home-scroll_img" />
+                    </div>
+
+                    <!-- 3 → Matches Third Text Block -->
+                    <div role="listitem" class="home-scroll_img-item w-dyn-item">
+                        <img alt="Image" loading="lazy" src="./images/MSME-img.jpg" class="home-scroll_img" />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="grid-col home-scroll_content page-padding">
+            <div class="home-scroll_text-wrap w-dyn-list">
+                <div role="list" class="home-scroll_text-list w-dyn-items">
+
+                    <!-- 1 -->
+                    <div role="listitem" class="home-scroll_text-item w-dyn-item">
+                        <img alt="Image" loading="lazy" src="./images/awards-img-1.jpg" class="home-scroll_photo" />
+
+                        <h2 class="wow fadeInUp" data-wow-delay="0.2s">Unmatched Success And
+                            <br><span class="gradient-text">Unparalleled Achievements</span>
+                        </h2>
+
+                        <ul class="services">
+                            <li>TS-23-09-icon-60x60-cyber-security-audit Emerging Entrepreneur in Cyber Security award
+                                from Lt. Gen. K. T. Parnaik (PVSM, UYSM, YSM), Governor of Arunachal Pradesh at ETNow
+                                Business Conclave 2025</li>
+                            <li>Honored with this prestigious Best Cyber Security Company of India award by the
+                                Honourable Minister, Nitin Gadkari, Government of India, at New Delhi</li>
+                            <li>Our CEO honored as Best Cyber Security Entrepreneur of India by Insight Success Magazine
+                                in 2024</li>
+                            <li>Our CEO Honored as the Youngest Entrepreneur of Odisha by the Director of IIT
+                                Bhubaneswar.</li>
+                        </ul>
+
+                        <a href="#" class="cta-btn fill-icon mt-0">
+                            <span>Read More</span>
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="#000"
+                                    stroke-width="2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- 2 -->
+                    <div role="listitem" class="home-scroll_text-item w-dyn-item">
+                        <img alt="Image" loading="lazy" src="./images/awards-img-2.jpg" class="home-scroll_photo" />
+
+                        <h2 class="wow fadeInUp gradient-text" data-wow-delay="0.2s">The Best Cybersecurity Company
+                            <br><span class="gradient-text">Everyone Trusts Blindly</span>
+                        </h2>
+
+                        <ul class="services">
+                            <li>Honored with the “Excellence in Cyber Security” award by Entrepreneur Magazine at
+                                Bangalore</li>
+                            <li>Honored with the “Best Cyber Security Personality of the Year 2025” award by a leading
+                                magazine</li>
+                            <li>Partner with the Government of Odisha to showcase the state’s growth and potential to
+                                the world at the Utkarsh Odisha – Make in Odisha 2025 Conclave.</li>
+
+                        </ul>
+
+                        <a href="#" class="cta-btn fill-icon mt-0">
+                            <span>Read More</span>
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="#000"
+                                    stroke-width="2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- 3 -->
+                    <div role="listitem" class="home-scroll_text-item w-dyn-item">
+                        <img alt="Image" loading="lazy" src="./images/MSME-img.jpg" class="home-scroll_photo" />
+
+                        <h2 class="wow fadeInUp gradient-text" data-wow-delay="0.2s">Shaping the Future of Digital
+                            <br><span class="gradient-text">Security in Odisha & Beyond</span>
+                        </h2>
+
+                        <ul class="services">
+                            <li>Industry Excellence Award at Odisha Nirmana MSME Summit 2025, felicitated by Shri Gokula
+                                Nanda Mallik, Hon’ble Minister, MSME, Fisheries & ARD, Shri Sampad Chandra Swain,
+                                Hon’ble Minister of State, and Ms. Tanaya Patnaik, Executive Director, Sambad Group &
+                                Editor of Kanak News.</li>
+                            <li>Recognized for Outstanding Cybersecurity Leadership for strengthening Odisha’s digital
+                                ecosystem and contributing to India’s secure digital future.</li>
+                            <li>Honored for Driving Innovation & Impact in Cybersecurity, reflecting the dedication of
+                                our team and the trust of our clients and partners.</li>
+                            <li>This Recognition Celebrates Threatsys’ Vision to build a safer, stronger, and globally
+                                competitive cybersecurity hub in Odisha.</li>
+                        </ul>
+
+                        <a href="#" class="cta-btn fill-icon mt-0">
+                            <span>Read More</span>
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="#000"
+                                    stroke-width="2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section global-presence-section">
+        <div class="container">
+            <h3 class="wow fadeInUp top-text text-align-center">Regional Presence</h3>
+            <h2 class="wow fadeInUp text-align-center" data-wow-delay="0.2s" data-cursor="-opaque">Our
+                Cybersecurity
+                <br> <span class="gradient-text">Footprint Across the Globe</span>
+            </h2>
+
+            <!-- <h2 class="img-text">Global Presence</h2> -->
+
+            <h3 class="rot-text  wow fadeInLeft">Presence</h3>
+
+            <div class="map-container">
+                <img class="map-img" src="./images/map-1.svg" alt="Image">
+                <div class="map-dot dot-usa" data-target="tooltip-usa"></div>
+                <div class="tooltip tooltip-usa" id="tooltip-usa">
+                    <img class="tool-img" src="./images/global-presence/GP_USA.webp" alt="Image">
+                    <div>
+                        <h4>UNITED STATE OF AMERICA</h4>
+                        <p>Our Regional Hub</p>
+                    </div>
+                </div>
+
+                <div class="map-dot dot-kenya" data-target="tooltip-kenya"></div>
+                <div class="tooltip tooltip-kenya" id="tooltip-kenya">
+                    <img class="tool-img" src="./images/global-presence/GP_KENYA.webp" alt="Image">
+                    <div>
+                        <h4>KENYA</h4>
+                        <p>Our Regional Hub</p>
+                    </div>
+                </div>
+
+                <div class="map-dot dot-uk" data-target="tooltip-uk"></div>
+                <div class="tooltip tooltip-uk" id="tooltip-uk">
+                    <img class="tool-img" src="./images/global-presence/GP_UK.webp" alt="Image">
+                    <div>
+                        <h4>UNITED KINGDOM</h4>
+                        <p>Our Regional Hub</p>
+                    </div>
+                </div>
+
+                <div class="map-dot dot-qatar" data-target="tooltip-qatar"></div>
+                <div class="tooltip tooltip-qatar" id="tooltip-qatar">
+                    <img class="tool-img" src="./images/global-presence/GP_QATAR.webp" alt="Image">
+                    <div>
+                        <h4>AFRICA</h4>
+                        <p>Our Regional Hub</p>
+                    </div>
+                </div>
+
+                <div class="map-dot dot-dubai" data-target="tooltip-dubai"></div>
+                <div class="tooltip tooltip-dubai" id="tooltip-dubai">
+                    <img class="tool-img" src="./images/global-presence/GP_DUBAI.webp" alt="Image">
+                    <div>
+                        <h4>DUBAI</h4>
+                        <p>Our Regional Hub</p>
+                    </div>
+                </div>
+
+                <div class="map-dot dot-india" data-target="tooltip-india"></div>
+                <div class="tooltip tooltip-india active" id="tooltip-india">
+                    <img class="tool-img" src="./images/global-presence/GP_INDIA.webp" alt="Image">
+                    <div>
+                        <h4>INDIA</h4>
+                        <p>Headquarters of Global Security</p>
+                    </div>
+                </div>
+
+                <div class="map-dot dot-au" data-target="tooltip-au"></div>
+                <div class="tooltip tooltip-au" id="tooltip-au">
+                    <img class="tool-img" src="./images/global-presence/GP_AUSTRALIA.webp" alt="Image">
+                    <div>
+                        <h4>AUSTRALIA</h4>
+                        <p>Our Regional Hub</p>
+                    </div>
+                </div>
+
+                <div class="map-dot dot-nigeria" data-target="tooltip-nigeria"></div>
+                <div class="tooltip tooltip-nigeria" id="tooltip-nigeria">
+                    <img class="tool-img" src="./images/global-presence/GP_NIGERIA.webp" alt="Image">
+                    <div>
+                        <h4>NIGERIA</h4>
+                        <p>Our Regional Hub</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section product-section">
+
+        <img src="./images/bg-pattern.png" alt="Bg Pattern" class="bg-pattern">
+
+        <div class="container">
+            <h3 class="wow fadeInUp top-text">Our Projects</h3>
+            <h2 class="wow fadeInUp text-white" style="position:relative;" data-wow-delay="0.2s" data-cursor="-opaque">
+                Empowering Global Brands
+                <br> <span class="gradient-yl"> with Trusted Cybersecurity Solutions</span>
+            </h2>
+
+            <div class="product-slider">
+                <div class="swiper productSwiper">
+                    <div class="swiper-wrapper">
+
+                        <!-- Product Card 1 -->
+                        <div class="swiper-slide">
+                            <a href="" class="product-card">
+                                <div class="product-img">
+                                    <img src="./images/subhdra.png" alt="Image">
+                                </div>
+                                <div class="product-content">
+                                    <h4>Ensuring Data Security for One Crore Women Under Subhadra Yojana</h4>
+
+                                    <div class="product-meta">
+                                        <span class="date">3rd May 2024</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Product Card 2 -->
+                        <div class="swiper-slide">
+                            <a href="" class="product-card">
+                                <div class="product-img">
+                                    <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="Image">
+                                </div>
+                                <div class="product-content">
+                                    <h4>Ensuring Data Security for One Crore Women Under Subhadra Yojana</h4>
+
+                                    <div class="product-meta">
+                                        <span class="date">3rd May 2024</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Product Card 3 -->
+                        <div class="swiper-slide">
+                            <a href="" class="product-card">
+                                <div class="product-img">
+                                    <img src="./images/subhdra.png" alt="Project">
+                                </div>
+                                <div class="product-content">
+                                    <h4>Ensuring Data Security for One Crore Women Under Subhadra Yojana</h4>
+
+                                    <div class="product-meta">
+                                        <span class="date">3rd May 2024</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Product Card 4 -->
+                        <div class="swiper-slide">
+                            <a href="" class="product-card">
+                                <div class="product-img">
+                                    <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="Image">
+                                </div>
+                                <div class="product-content">
+                                    <h4>Ensuring Data Security for One Crore Women Under Subhadra Yojana</h4>
+
+                                    <div class="product-meta">
+                                        <span class="date">3rd May 2024</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Product Card 5 -->
+                        <div class="swiper-slide">
+                            <a href="" class="product-card">
+                                <div class="product-img">
+                                    <img src="./images/subhdra.png" alt="Project">
+                                </div>
+                                <div class="product-content">
+                                    <h4>Ensuring Data Security for One Crore Women Under Subhadra Yojana</h4>
+
+                                    <div class="product-meta">
+                                        <span class="date">3rd May 2024</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="next-prev justify-content-start">
+                        <div class="nav-btn prev-btn"></div>
+                        <div class="nav-btn next-btn"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section brand-section">
+        <div class="container">
+            <h3 class="wow fadeInUp top-text text-align-center">Our Certification</h3>
+            <h2 class="wow fadeInUp text-align-center" data-wow-delay="0.2s" data-cursor="-opaque">Empowering Your
+                Business with
+                <br> <span class="gradient-text"> Trusted Cybersecurity</span>
+            </h2>
+            <div class="cert-brand-logo">
+                <!-- Row 1 : 6 logos -->
+                <div class="brand-row">
+                    <div class="brand-card delay1">
+                        <div class="flip-box">
+                            <div class="front"><img src="./images/certification/certification-tt-19.png" alt="Image">
+                            </div>
+                            <div class="back"><img src="./images/certification-tt-39.webp" alt="Image"></div>
+                        </div>
+                    </div>
+                    <div class="brand-card delay2">
+                        <div class="flip-box">
+                            <div class="front"><img src="./images/certification/certification-tt-20.png" alt="Image">
+                            </div>
+                            <div class="back"><img src="./images/certification-tt-40.webp" alt="Image"></div>
+                        </div>
+                    </div>
+                    <div class="brand-card delay3">
+                        <div class="flip-box">
+                            <div class="front"><img src="./images/certification/certification-tt-21.png" alt="Image">
+                            </div>
+                            <div class="back"><img src="./images/certification-tt-41.webp" alt="Image"></div>
+                        </div>
+                    </div>
+                    <div class="brand-card delay4">
+                        <div class="flip-box">
+                            <div class="front"><img src="./images/certification/certification-tt-22.png" alt="Image">
+                            </div>
+                            <div class="back"><img src="./images/certification-tt-42.webp" alt="Image"></div>
+                        </div>
+                    </div>
+                    <div class="brand-card delay5">
+                        <div class="flip-box">
+                            <div class="front"><img src="./images/certification/certification-tt-23.png" alt="Image">
+                            </div>
+                            <div class="back"><img src="./images/certification-tt-43.webp" alt="Image"></div>
+                        </div>
+                    </div>
+                    <div class="brand-card delay6">
+                        <div class="flip-box">
+                            <div class="front"><img src="./images/certification/certification-tt-24.png" alt="Image">
+                            </div>
+                            <div class="back"><img src="./images/certification-tt-44.webp" alt="Image"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 2 : 4 logos -->
+                <div class="brand-row">
+                    <div class="brand-card delay7">
+                        <div class="flip-box">
+                            <div class="front"><img src="./images/certification/certification-tt-25.png" alt="Image">
+                            </div>
+                            <div class="back"><img src="./images/certification-tt-45.webp" alt="Image"></div>
+                        </div>
+                    </div>
+                    <div class="brand-card delay8">
+                        <div class="flip-box">
+                            <div class="front"><img src="./images/certification/certification-tt-26.png" alt="Image">
+                            </div>
+                            <div class="back"><img src="./images/certification/certification-tt-19.png" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brand-card delay9">
+                        <div class="flip-box">
+                            <div class="front"><img src="./images/certification/certification-tt-27.png" alt="Image">
+                            </div>
+                            <div class="back"><img src="./images/certification/certification-tt-20.png" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brand-card delay10">
+                        <div class="flip-box">
+                            <div class="front"><img src="./images/certification/certification-tt-28.png" alt="Image">
+                            </div>
+                            <div class="back"><img src="./images/certification/certification-tt-21.png" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 3 : 2 logos -->
+                <div class="brand-row">
+                    <div class="brand-card delay11">
+                        <div class="flip-box">
+                            <div class="front"><img src="./images/certification/certification-tt-29.png" alt="Image">
+                            </div>
+                            <div class="back"><img src="./images/certification/certification-tt-22.png" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brand-card delay12">
+                        <div class="flip-box">
+                            <div class="front"><img src="./images/certification/certification-tt-30.png" alt="Image">
+                            </div>
+                            <div class="back"><img src="./images/certification/certification-tt-23.png" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section testimonial-area">
+        <div class="container">
+            <div class="">
+                <div class="testimonial-box">
+                    <div class="testimonial-left wow fadeInLeft">
+                        <h3 class="wow fadeInUp top-text">Testimonials</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque">Discover Real Experiences
+                            <br> <span class="gradient-text">from Happy Clients</span>
+                        </h2>
+
+                        <!-- Swiper -->
+                        <div class="swiper testimonialSwiper">
+                            <div class="swiper-wrapper">
+                                <!-- Slide 1 -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-slide">
+                                        <h3>Priyadarshi Nanu Pany</h3>
+                                        <span>CEO, CSM TECHNOLOGIES</span>
+                                        <p>“Threatsys has been a trusted security partner for our organisation. Their
+                                            team brought clarity to complex issues whether it was testing, compliance,
+                                            or regular audits. We’ve seen a visible improvement in our security posture
+                                            and overall confidence in our systems.”</p>
+                                        <div class="verified-section">
+                                            <div class="verified-left">
+                                                <img src="./images/brand-logos/csm.png" alt="logo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 2 -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-slide">
+                                        <h3>Subhadarshi Mishra</h3>
+                                        <span>MANAGING DIRECTOR, SPARC PVT. LTD.</span>
+                                        <p>"The expertise Threatsys brings is unmatched. They helped us identify hidden
+                                            vulnerabilities, streamline our compliance journey, and strengthen our
+                                            internal processes. Their proactive approach makes us feel truly protected
+                                            in an ever-evolving threat landscape."</p>
+                                        <div class="verified-section">
+                                            <div class="verified-left">
+                                                <img src="./images/brand-logos/sparc-logo.svg" alt="logo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 3 -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-slide">
+                                        <h3>Kaushik Subudhi</h3>
+                                        <span>Founder, Zooppay</span>
+                                        <p>“Working with Threatsys has transformed how we look at cybersecurity. Their
+                                            thorough assessments, compliance guidance, and continuous reviews have made
+                                            our environment significantly more resilient. A dependable team that
+                                            delivers results every single time.”</p>
+                                        <div class="verified-section">
+                                            <div class="verified-left">
+                                                <img src="./images/brand-logos/zooppay.png" alt="logo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pagination and navigation -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-right wow fadeInRight" data-wow-delay="0.2s">
+                        <img src="./images/partner-img.png" alt="Happy client" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section blog-section">
+        <div class="container">
+            <div class="front-blog">
+                <div class="content-container">
+
+                    <h3 class="wow fadeInUp top-text text-align-center"> Our Blog</h3>
+                    <h2 class="wow fadeInUp text-align-center" data-wow-delay="0.2s" data-cursor="-opaque">More
+                        Articles
+                        <span class="gradient-text">from Resource Library</span>
+                    </h2>
+                </div>
+
+
+
+                <div class="front-blog-list">
+                    <a class="front-blog-item article-blog wow fadeInUp" href="#">
+                        <div class="front-blog-item-thumbnail article__thumbnail"
+                            style="background-image: url('./images/blog1.jpg')">
+                        </div>
+
+                        <div class="front-blog-item-content article__body">
+                            <div>
+                                <h3 class="article__title">How Crypto Exchanges Can Stay Ahead of Cyber Threats in 2025
+                                </h3>
+                            </div>
+                            <div class="article__excerpt">
+                                <p>
+                                    The rise of cryptocurrency has reshaped global finance, but it has also opened a new
+                                    frontier of cyber threats. With billions of dollars transacted da..</p>
+                            </div>
+                            <footer class="article__footer">
+                                <div class="custom-news-meta">
+                                    <span>29th Oct 2025</span>
+                                </div>
+                                <!-- <div class="footer__readmore">
+                                    <span class="footer__readmore-text">Read more</span>
+                                    <span class="footer__readmore-arrow">
+                                        <i class="bi bi-arrow-right"></i>
+                                    </span>
+                                </div> -->
+                            </footer>
+                        </div>
+                    </a>
+
+                    <a class="front-blog-item article-blog wow fadeInUp" href="#">
+                        <div class="front-blog-item-thumbnail article__thumbnail"
+                            style="background-image: url('./images/blog2.jpg')">
+                        </div>
+                        <div class="front-blog-item-content article__body">
+                            <div>
+                                <h3 class="article__title">National Cybersecurity Awareness Month 2025 with Threatsys
+                                </h3>
+                            </div>
+                            <div class="article__excerpt">
+                                <p>October marks National Cybersecurity Awareness Month (NCSAM) , a global initiative
+                                    dedicated to building awareness around digital safety and empowering individuals and
+                                    organizations to stay cyber smart.</p>
+                            </div>
+                            <footer class="article__footer">
+                                <div class="custom-news-meta">
+                                    <span>24th Oct 2025</span>
+                                </div>
+                            </footer>
+                        </div>
+                    </a>
+
+                    <a class="front-blog-item article-blog wow fadeInUp" href="#">
+                        <div class="front-blog-item-thumbnail article__thumbnail"
+                            style="background-image: url('./images/blog3.jpg')">
+                        </div>
+                        <div class="front-blog-item-content article__body">
+                            <div>
+                                <h3 class="article__title">Why Cybersecurity Is Crucial for the Education Sector in 2025
+                                </h3>
+                            </div>
+                            <div class="article__excerpt">
+                                <p>The education sector has undergone a massive transformation in recent years. From
+                                    online classes and digital assignments to cloud-based student management systems,
+                                    technology has become the foundation of modern learning. However, this digital leap
+                                    has also opened the doors to a new kind of threat , cyberattacks targeting
+                                    educational institutions.</p>
+                            </div>
+                            <footer class="article__footer">
+                                <div class="custom-news-meta">
+                                    <span>16th Oct 2025</span>
+                                </div>
+                            </footer>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="text-align-center w-100 mt-5">
+                    <a href="#" class="cta-btn fill-icon mt-0">
+                        <span>View All Blogs</span>
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="#000"
+                                stroke-width="2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="section pt-0">
+        <div class="container">
+            <div class="cntct-box">
+                <!-- CTA Box Content Start -->
+                <div class="cta-box-content">
+                    <!-- Section Title Start -->
+                    <div class="section-title dark-section">
+                        <h2 class="wow fadeInUp text-white" data-cursor="-opaque"
+                            style="visibility: visible; animation-name: fadeInUp;">Protect your business with
+
+                            <br><span class="gradient-yl">AI-powered cyber security service !</span>
+                        </h2>
+                    </div>
+                    <!-- Section Title End -->
+
+                    <!-- CTA Contact Info Start -->
+                    <div class="cta-contact-info">
+                        <!-- CTA Contact Item Start -->
+                        <div class="cta-contact-item">
+                            <!-- <div class="icon-box">
+                                <img src="./images/icon-phone.svg" alt="Image">
+                            </div> -->
+                            <div class="cta-contact-content">
+                                <h3>Get contact now</h3>
+                                <p><a href="tel:+919668200222">+91-9668200222</a></p>
+                            </div>
+                        </div>
+                        <!-- CTA Contact Item End -->
+
+                        <!-- CTA Contact Item Start -->
+                        <div class="cta-contact-item">
+                            <!-- <div class="icon-box">
+                                <img src="images/icon-mail.svg" alt="Image">
+                            </div> -->
+                            <div class="cta-contact-content">
+                                <h3>Sent e-mail</h3>
+                                <p><a href="mailto:sales@threatsys.co.in">sales@threatsys.co.in</a></p>
+                            </div>
+                        </div>
+                        <!-- CTA Contact Item End -->
+                    </div>
+                    <!-- CTA Contact Info End -->
+                </div>
+                <!-- CTA Box Content End -->
+
+                <!-- CTA Box Image Start -->
+                <div class="cta-box-image">
+                    <img src="./images/CTA-girl.svg" alt="Image">
+                    <img class="cnt-bg" src="./images/round-2.png" alt="Image">
+                </div>
+                <!-- CTA Box Image End -->
+                <img class="arw-move" src="./images/arrow-move.svg" alt="Image">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--=================================-->
+
+    <section class="section verify-section d-none">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="wow fadeInUp top-text animated" style="visibility: visible; animation-name: fadeInUp;">
+                        Verify Certificate</h3>
+                    <h2 class="wow fadeInUp animated" data-wow-delay="0.2s" data-cursor="-opaque"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">Because Every
+                        Genuine Effort
+                        <br> <span class="gradient-text">Deserves Proof</span>
+                    </h2>
+                    <img class="dot-bg" src="./images/dot-bg.png" alt="Bg">
+                </div>
+                <div class="col-md-6">
+                    <div class="form-vry">
+                        <form class="verify-form" id="verifyForm">
+                            <input type="text" id="certificateNo" name="certificateNo" placeholder="Certificate No."
+                                required="">
+                            <span>OR</span>
+                            <input type="text" id="serialNo" name="serialNo" placeholder="Serial No. (optional)">
+                            <button type="submit">Verify Now</button>
+                        </form>
+                        <div class="verify-result" id="verifyResult" aria-live="polite" style="display:none;"></div>
+                        <img class="round-1-ft" src="./images/blue-round.png" alt="round">
+                        <img class="round-2-ft" src="./images/blue-round.png" alt="round">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="left-shp"></div>
+        <div class="right-shp d-none"></div>
+    </section>
+
+    <footer class="footer">
+        <!-- <img src="./images/Footer-image-1.svg" class="fot-bg" alt=""> -->
+        <!-- <img src="./images/wave-bg2.png" class="fot-bg" alt="footer Background"> -->
+        <img src="./images/shape-ft.png" alt="shape" class="verify-section-shape">
+
+        <a href="./verify-certificate.html" target="_blank" class="text-btn ft-verify-btn">
+            <div>
+                <img src="./images/badge.png" alt="badge">
+            </div>
+            <span>Verify Your Certificate</span>
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="#fff"
+                    stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+            </div>
+        </a>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row footer-brand">
+
+                    <div class="col-xl-6">
+                        <div class="logo-box">
+                            <img src="./images/TT-logo-light.svg" alt="logo">
+                            <h5>Your 360<sup>o</sup> Cyber Security Partner</h5>
+                        </div>
+
+                        <h4 class="footer-line-txt">Since 2013</h4>
+
+                    </div>
+
+                    <div class="col-xl-6">
+                        <p>
+                            <strong> Corporate Office </strong>: 3rd Floor, F3, Ryan Tower, Technology Corridor, near
+                            Trident Academy, Chandaka Industrial Estate, Infocity, Chandrasekharpur, Bhubaneswar, Odisha
+                            751024
+                        </p>
+
+
+                        <div class="social-menu">
+
+                            <ul>
+                                <li><a href="https://x.com/threatsys" target="_blank"><img src="./images/twitter.png"
+                                            alt=""></a></li>
+                                <li><a href="https://www.instagram.com/threatsys/" target="_blank"><img
+                                            src="./images/instagram.png" alt=""></a></li>
+                                <li><a href="https://www.facebook.com/threatsys" target="_blank"><img
+                                            src="./images/facebook-app-symbol.png" alt=""></a></li>
+                                <li><a href="https://www.youtube.com/@ThreatsysTechnologies" target="_blank"><img
+                                            src="./images/youtube.png" alt=""></a></li>
+                                <li><a href="https://www.linkedin.com/company/threatsys/" target="_blank"><img
+                                            src="./images/linkedin.png" alt=""></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="footer-links ">
+
+                    <div class="col">
+                        <div class="f-cnt">
+
+                            <div class="f-cell">
+                                <div class="cell">
+                                    <img src="./images/phone-call.png" alt="">
+                                </div>
+                                <div>
+                                    <p>+91-9668200222</p>
+                                    <p>+91-8018482222 </p>
+                                </div>
+                            </div>
+
+                            <div class="f-cell">
+                                <div class="cell">
+                                    <img src="./images/email.png" alt="">
+                                </div>
+                                <div>
+                                    <p>sales@threatsys.co.in</p>
+                                    <p>support@threatsys.co.in </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h3>Cyber Security Testing</h3>
+                        <a href="#">IOT Security Testing</a>
+                        <a href="#">SCADA Security Testing</a>
+                        <a href="#">Thick Client Security Testing</a>
+                        <a href="#">Web Application Security Testing</a>
+                        <a href="#">Mobile Apps Security Testing</a>
+                        <a href="#">Network Penetration Testing</a>
+                    </div>
+
+                    <div class="col">
+                        <h3>Industries</h3>
+                        <a href="#">Banking & Finance</a>
+                        <a href="#">Government Industry</a>
+                        <a href="#">IT, ITeS & Retail Industry</a>
+                        <a href="#">Manufacturing & Telecom</a>
+                        <a href="#">Healthcare</a>
+                        <a href="#">Higher Education</a>
+                    </div>
+
+                    <div class="col">
+                        <h3>Company</h3>
+                        <a href="#">About</a>
+                        <a href="#">Core Values</a>
+                        <a href="#">Leadership Team</a>
+                        <a href="#">Why Choose Us</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Case Studies</a>
+                        <a href="#">News Coverage</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Locations</a>
+                        <a href="#">Global Presence</a>
+                    </div>
+
+                    <div class="col">
+                        <h3>Support</h3>
+                        <a href="#">CYQER</a>
+                        <a href="#">Book Your Consultation</a>
+                        <a href="#">Cookie Policy</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Help & FAQ</a>
+                        <a href="#">Downloads</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+
+
+                </div>
+
+                <div class="col footer-accordion-big">
+                    <div class="f-cnt">
+
+                        <div class="f-cell">
+                            <div class="cell">
+                                <img src="./images/phone-call.png" alt="">
+                            </div>
+                            <div>
+                                <p>+91-9668200222</p>
+                                <p>+91-8018482222 </p>
+                            </div>
+                        </div>
+
+                        <div class="f-cell">
+                            <div class="cell">
+                                <img src="./images/email.png" alt="">
+                            </div>
+                            <div>
+                                <p>sales@threatsys.co.in</p>
+                                <p>support@threatsys.co.in </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="accordion-wrapper">
+
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">Cyber Security Testing</div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> IOT Security Testing</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> SCADA Security Testing</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Thick Client Security Testing</a>
+                                </li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Web Application Security Testing</a>
+                                </li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Mobile Apps Security Testing</a>
+                                </li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Network Penetration Testing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">Industries</div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Banking & Finance</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Government Industry</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> IT, ITeS & Retail Industry</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Manufacturing & Telecom</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Healthcare</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Higher Education</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">Company</div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> About</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Core Values</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Leadership Team</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Why Choose Us</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Blog</a>
+                                </li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Case Studies</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> News Coverage</a>
+                                </li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Careers</a>
+                                </li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Locations</a>
+                                </li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Global Presence</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">Support</div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> CYQER</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Book Your Consultation</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Cookie Policy</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Privacy Policy/a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Help & FAQ</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Downloads</a>
+                                </li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Contact Us</a>
+                                </li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Sitemap</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+        <div class="btm-footer">
+            <div class="container">
+                <p>Copyright © 2025 Threatsys Technologies Private Limited</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919876543210" target="_blank" rel="noopener" class="btn-whatsapp-pulse">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!---<img class="header-demo" src="./images/footer.jpg" alt="Image">---->
+
+    <div class="btn-spotlight">
+        <a>
+            <div class="speaker-div">
+                <img src="./images/spotlight-icon.svg" alt="spotlight">
+            </div>
+        </a>
+    </div>
+
+    <div class="spotlight" id="spotlight">
+        <div class="close-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-circle"
+                viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+            </svg>
+        </div>
+        <div>
+            <img src="./images/spotlight1.png" alt="spotlight">
+        </div>
+        <div>
+            <p>Check out our latest article on Cybersecurity Trends!</p>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
